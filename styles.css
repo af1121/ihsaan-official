@@ -1754,8 +1754,6 @@ img{ max-width:100%; display:block; }
     height: 200px;
   }
   .prog-card .label { font-size: 13px; margin-bottom: 6px; }
-  .plus { width: 24px; height: 24px; top: 8px; right: 8px; }
-  .plus::before, .plus::after { width: 10px; }
 
   /* --- Impact --- */
   .impact-section { padding: 60px 10px; }
