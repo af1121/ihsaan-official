@@ -784,7 +784,7 @@ img{ max-width:100%; display:block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer; /* Suggests interactivity to the user */
+  /* cursor: pointer; Suggests interactivity to the user */
 }
 
 /* --- MEDIA WRAPPER --- */
