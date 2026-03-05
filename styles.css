@@ -809,14 +809,14 @@ img{ max-width:100%; display:block; }
 
 /* Value icon hover glow ring */
 .value-icon-media{ position: relative; }
-.value-icon-media::after{
+/* .value-icon-media::after{
   content: "";
   position: absolute;
   inset: 10px;
   border-radius: 50%;
   border: 2px solid transparent;
   transition: border-color 0.4s ease, box-shadow 0.4s ease;
-}
+} */
 .value-icon:hover .value-icon-media::after{
   border-color: rgba(143,208,255,0.3);
   box-shadow: 0 0 30px rgba(143,208,255,0.15);
