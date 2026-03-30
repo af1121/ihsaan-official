@@ -1240,7 +1240,8 @@ img{ max-width:100%; display:block; }
   .events-copy{ text-align:center; }
   .events-text{ margin: 0 auto 20px; }
 
-  .values-icons{ flex-direction: column; align-items: center; }
+  .values-icons{ flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .value-icon { width: calc(50% - 20px); max-width: none; }
   .value-icon-media{ width: 260px; height: 160px; }
 
   .hero-logo{ height:40px; top:12%; }
