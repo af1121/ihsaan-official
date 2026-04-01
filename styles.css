@@ -965,20 +965,24 @@ img{ max-width:100%; display:block; }
   gap:14px;
   align-items:center;
   width:max-content;
+  flex: 0 0 auto;
   padding: 14px 18px;
   animation: brandScroll 50s linear infinite;
+  will-change: transform;
 }
 .brand-track-reverse{
   animation: brandScrollReverse 50s linear infinite;
 }
-.brand-carousel:hover .brand-track{ animation-play-state: paused; }
+@media (hover: hover) and (pointer: fine) {
+  .brand-carousel:hover .brand-track{ animation-play-state: paused; }
+}
 @keyframes brandScroll{
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
 }
 @keyframes brandScrollReverse{
-  from { transform: translateX(-50%); }
-  to   { transform: translateX(0); }
+  from { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(0, 0, 0); }
 }
 .brand-tile{
   min-width: 260px;
@@ -990,6 +994,25 @@ img{ max-width:100%; display:block; }
   place-items:center;
   padding:14px 18px;
   box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .brand-track{
+    animation-duration: 32s;
+    animation-play-state: running;
+  }
+  .brand-track-reverse{
+    animation-duration: 32s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-track,
+  .brand-track-reverse{
+    animation-duration: 40s !important;
+    animation-iteration-count: infinite !important;
+    animation-play-state: running !important;
+  }
 }
 .brand-tile img{ max-height: 62px; width:auto; object-fit:contain; }
 
@@ -1784,8 +1807,8 @@ img{ max-width:100%; display:block; }
   /* --- Brand carousel --- */
   .worked-with { padding: 34px 0 20px; }
   .worked-title { font-size: 20px; margin-bottom: 12px; }
-  .brand-carousel { border-radius: 12px; padding: 8px 0; }
-  .brand-track { padding: 10px 12px; gap: 10px; }
+  .brand-carousel { border-radius: 12px; padding: 8px 0; display: flex; justify-content: center; }
+  .brand-track { padding: 10px 12px; gap: 10px; justify-content: center; }
   .brand-tile { min-width: 160px; height: 72px; border-radius: 12px; }
   .brand-tile img { max-height: 36px; }
   .brand-carousel-reverse { margin-top: 10px; }
