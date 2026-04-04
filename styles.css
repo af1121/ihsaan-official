@@ -1961,14 +1961,15 @@ img{ max-width:100%; display:block; }
 
   /* --- Hero --- */
   .hero { min-height: 310px; height: 60vh; }
-  .hero-content { padding: 20px 0 38px; text-align: left; }
-  .hero h1 { font-size: clamp(28px, 8vw, 42px); margin-bottom: 18px; }
+  .hero-content { padding: 20px 16px 38px; text-align: left; }
+  .hero h1 { font-size: clamp(26px, 8vw, 38px); margin-bottom: 18px; }
   .hero-logo { height: 28px; top: 12%; }
   .hero-sub { font-size: 14px; margin-top: 18px; }
   .btn-row.center { justify-content: flex-start; }
   .hero-cta {
-    width: 62%;
-    padding: 14px 16px;
+    width: auto;
+    max-width: 100%;
+    padding: 14px 18px;
     font-size: 15px;
     justify-content: flex-start;
     text-align: left;
