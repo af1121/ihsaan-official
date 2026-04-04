@@ -356,4 +356,18 @@ window.addEventListener("load", () => {
   initRippleEffect();
   initRevealSystem();
   initCounterObserver();
+  function initHeroVideo() {
+  const video = document.querySelector(".hero-video");
+  if (!video) return;
+
+  // Let the page render first, then load the video
+  setTimeout(() => {
+    video.querySelectorAll("source").forEach(source => {
+      if (source.dataset.src) {
+        source.src = source.dataset.src;
+      }
+    });
+    video.load();
+  }, 800);
+}
 });
