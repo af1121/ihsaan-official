@@ -215,6 +215,14 @@ function initNavScroll() {
     if (!ticking) {
       requestAnimationFrame(() => {
         topbar.classList.toggle("scrolled", window.scrollY > 50);
+        // Hide navbar when scrolling down into hero content area
+        if (window.scrollY > 150) {
+          topbar.style.opacity = "0";
+          topbar.style.pointerEvents = "none";
+        } else {
+          topbar.style.opacity = "1";
+          topbar.style.pointerEvents = "auto";
+        }
         ticking = false;
       });
       ticking = true;
@@ -338,11 +346,32 @@ function initCounterObserver(){
 // ---------- UNIVERSAL SITE LOADER ----------
 function runSiteLoader() {
   const loader = document.getElementById("siteLoader");
+  const percentEl = document.getElementById("siteLoaderPercent");
+  const fillEl = document.querySelector(".site-loader-fill");
   if (!loader) return;
-  setTimeout(() => {
-    loader.classList.add("fade-out");
-    setTimeout(() => { loader.style.display = "none"; }, 600);
-  }, 1000);
+
+  const duration = 1000;
+  const start = performance.now();
+
+  function step(timestamp) {
+    const elapsed = Math.min(timestamp - start, duration);
+    const progress = elapsed / duration;
+    const percent = Math.round(progress * 100);
+
+    if (fillEl) fillEl.style.width = `${percent}%`;
+    if (percentEl) percentEl.textContent = `${percent}%`;
+
+    if (elapsed < duration) {
+      requestAnimationFrame(step);
+    } else {
+      if (fillEl) fillEl.style.width = "100%";
+      if (percentEl) percentEl.textContent = "100%";
+      loader.classList.add("fade-out");
+      setTimeout(() => { loader.style.display = "none"; }, 600);
+    }
+  }
+
+  requestAnimationFrame(step);
 }
 
 // Init
