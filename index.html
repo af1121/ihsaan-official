@@ -20,9 +20,11 @@
   <div id="siteLoader" class="site-loader" aria-hidden="true">
     <div class="site-loader-inner">
       <img src="IHSAAN LOGO.png" alt="IHSAAN" class="site-loader-logo">
+      <div class="site-loader-tagline">Elevating Faith-Driven Talent</div>
       <div class="site-loader-bar">
         <div class="site-loader-fill"></div>
       </div>
+      <div id="siteLoaderPercent" class="site-loader-percent" aria-hidden="true">0%</div>
     </div>
   </div>
 
@@ -34,7 +36,7 @@
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
-        <a class="nav-link" href="#who-we-are" data-route="who-we-are">Who We Are</a>
+        <a class="nav-link" href="#who-we-are" data-route="who-we-are">Our Story</a>
 
         <div class="nav-dropdown" id="programmesDropdown">
           <button class="nav-link nav-link-btn" type="button" aria-haspopup="menu" aria-expanded="false" id="programmesBtn">
@@ -64,16 +66,17 @@
           </svg>
         </a>
 
+        <a class="icon-btn li" href="https://linkedin.com/company/ihsaan-network/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM.21 8.98h4.56V24H.21V8.98zM7.98 8.98h4.37v2.05h.06c.61-1.16 2.1-2.37 4.32-2.37 4.62 0 5.48 3.04 5.48 6.99V24h-4.56v-7.59c0-1.81-.03-4.13-2.52-4.13-2.52 0-2.91 1.97-2.91 4v7.72H7.98V8.98z"/>
+          </svg>
+        </a>
+
         <a class="icon-btn mail" href="mailto:ihsaan@fosis.org.uk" aria-label="Email" title="Email">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/>
             <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2"/>
           </svg>
-        </a>
-
-        <!-- LinkedIn: white "L" on blue -->
-        <a class="icon-btn li" href="https://linkedin.com/company/ihsaan-network/" aria-label="LinkedIn" title="LinkedIn" target="_blank">
-          <span class="li-letter" aria-hidden="true">L</span>
         </a>
       </div>
 
@@ -83,7 +86,7 @@
     </div>
 
     <div class="mobile-drawer" id="drawer" hidden>
-      <a href="#who-we-are" data-route="who-we-are">Who We Are</a>
+      <a href="#who-we-are" data-route="who-we-are">Our Story</a>
 
       <details class="mobile-accordion">
         <summary>Our Programmes</summary>
@@ -130,10 +133,10 @@
 
         <div class="hero-content">
           <img class="hero-logo" src="IHSAAN LOGO.png" alt="IHSAAN" />
-          <h1 id="heroTitle">Where Faith-Driven Talent Grows,<br/>Leads, and Belongs</h1>
+          <h1 id="heroTitle">Elevating Faith-Driven Talent</h1>
 
           <div class="btn-row center">
-            <a class="btn hero-cta" href="#who-we-are" data-route="who-we-are">LEARN MORE</a>
+            <a class="btn hero-cta" href="#our-programmes">EXPLORE OUR RESOURCES</a>
           </div>
 
           <p class="hero-sub">
@@ -168,7 +171,7 @@
       </section>
 
       <!-- PROGRAMMES (✅ now WHITE background via CSS) -->
-      <section class="section programmes-section">
+      <section id="our-programmes" class="section programmes-section">
         <div class="container center">
           <h2 class="h2" data-reveal="fade-up">Our Programmes</h2>
 
