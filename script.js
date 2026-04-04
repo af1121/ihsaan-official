@@ -385,4 +385,5 @@ window.addEventListener("load", () => {
   initRippleEffect();
   initRevealSystem();
   initCounterObserver();
-});
+}
+)

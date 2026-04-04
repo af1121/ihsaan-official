@@ -113,7 +113,8 @@
       <section class="hero">
 
         <!-- ✅ HERO VIDEO (place behind text) -->
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <video class="hero-video" autoplay muted loop playsinline preload="none" poster="hero-poster.jpg">
+          <source src="hero-video.webm" type="video/webm">
           <source src="hero-video.mp4" type="video/mp4">
         </video>
 
@@ -157,17 +158,63 @@
 
           <div class="mission-panel" data-reveal="fade-up" data-reveal-delay="200">
             <p class="mission-text">
-              The Social Mobility Commission found that young Muslims are
-              <span class="quote-strong">"excluded, discriminated against, or failed"</span>
-              throughout their journey into employment. We exist to change that.
+              To empower every Muslim student and young professional with
+              <strong class="quote-strong">opportunities, resources, and networks</strong>
+              to unlock their dream careers through which they can build a more God-conscious and ethical society.
               <br><br>
-              IHSAAN empowers Muslim students across the UK &amp; Ireland with the
-              <strong class="quote-strong">mentorship, resources, and professional networks</strong>
-              they need to secure their dream careers &mdash; and through those careers, contribute to a more ethical and God-conscious society.
+              IHSAAN strives not only to break down barriers to entry, but fundamentally to develop the next generation of Muslim leaders who can contribute meaningfully at the very highest levels.
             </p>
           </div>
         </div>
       </section>
+
+      <!-- THE PROBLEM -->
+      <section class="section problem-section" aria-label="The Problem">
+        <div class="container">
+          <div class="center" data-reveal="fade-up">
+            <h2 class="h2 white">The Problem</h2>
+            <div class="mission-divider" data-reveal="fade-in" data-reveal-delay="300"></div>
+            <p class="problem-intro">
+              The data is clear. Muslim students in the UK face structural barriers that limit their professional potential - not because of lack of talent, but because of systemic exclusion.
+            </p>
+          </div>
+
+          <div class="problem-stats" data-reveal="fade-up" data-reveal-delay="200">
+
+            <div class="problem-stat">
+              <div class="problem-quote-mark">&ldquo;</div>
+              <div class="problem-pull-quote">
+                Muslims are excluded, discriminated against, or failed, at all stages of their transition from education to employment.
+              </div>
+              <div class="problem-source">
+                <span class="problem-source-dot"></span>
+                Social Mobility Commission
+              </div>
+            </div>
+
+            <div class="problem-divider-vert" aria-hidden="true"></div>
+
+            <div class="problem-stat">
+              <div class="problem-quote-mark">&ldquo;</div>
+              <div class="problem-figure">6%</div>
+              <div class="problem-desc">
+                Only 6% of British Muslims occupy high-level professional or managerial roles vs 10% across the UK population
+              </div>
+              <div class="problem-source">
+                <span class="problem-source-dot"></span>
+                Social Mobility Commission, 2017
+              </div>
+            </div>
+
+          </div>
+
+          <div class="problem-footer" data-reveal="fade-up" data-reveal-delay="400">
+            IHSAAN exists to change this.
+          </div>
+
+        </div>
+      </section>
+
 
       <!-- PROGRAMMES (✅ now WHITE background via CSS) -->
       <section id="our-programmes" class="section programmes-section">
