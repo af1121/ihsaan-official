@@ -1476,6 +1476,22 @@ filter:
   }
 }
 
+@media (max-width: 900px) {
+  .footer-col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand-col {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+  }
+}
 
 /* Responsive */
 @media(max-width:1100px){
@@ -1610,10 +1626,17 @@ filter:
   background: linear-gradient(135deg, #ffffff, #f0f5ff, #e8f0ff, #ffffff);
   background-size: 300% 300%;
   animation: donateGradient 8s ease infinite;
-  padding: 30px 0;
+  padding: 30px 20px;
   border-top: 1px solid rgba(16,43,104,.10);
   border-bottom: 1px solid rgba(16,43,104,.10);
 }
+
+@media (max-width: 600px) {
+  .donate-strip {
+    padding: 24px 16px;
+  }
+}
+
 @keyframes donateGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -1650,6 +1673,14 @@ filter:
   border: 1px solid rgba(255,255,255,.16);
   font-weight:900;
   text-transform:uppercase;
+  max-width: 100%;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .container-donate-inner {
+    padding: 0 16px;
+  }
 }
 
 .donate-btn{
