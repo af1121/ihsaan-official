@@ -344,39 +344,47 @@ function initCounterObserver(){
 }
 
 // ---------- UNIVERSAL SITE LOADER ----------
-function runSiteLoader() {
-  const loader = document.getElementById("siteLoader");
-  const percentEl = document.getElementById("siteLoaderPercent");
-  const fillEl = document.querySelector(".site-loader-fill");
-  if (!loader) return;
+// function runSiteLoader() {
+//   const loader = document.getElementById("siteLoader");
+//   const percentEl = document.getElementById("siteLoaderPercent");
+//   const fillEl = document.querySelector(".site-loader-fill");
+//   if (!loader) return;
 
-  const duration = 1000;
-  const start = performance.now();
+//   const duration = 1000;
+//   const start = performance.now();
 
-  function step(timestamp) {
-    const elapsed = Math.min(timestamp - start, duration);
-    const progress = elapsed / duration;
-    const percent = Math.round(progress * 100);
+//   function step(timestamp) {
+//     const elapsed = Math.min(timestamp - start, duration);
+//     const progress = elapsed / duration;
+//     const percent = Math.round(progress * 100);
 
-    if (fillEl) fillEl.style.width = `${percent}%`;
-    if (percentEl) percentEl.textContent = `${percent}%`;
+//     if (fillEl) fillEl.style.width = `${percent}%`;
+//     if (percentEl) percentEl.textContent = `${percent}%`;
 
-    if (elapsed < duration) {
-      requestAnimationFrame(step);
-    } else {
-      if (fillEl) fillEl.style.width = "100%";
-      if (percentEl) percentEl.textContent = "100%";
-      loader.classList.add("fade-out");
-      setTimeout(() => { loader.style.display = "none"; }, 600);
-    }
-  }
+//     if (elapsed < duration) {
+//       requestAnimationFrame(step);
+//     } else {
+//       if (fillEl) fillEl.style.width = "100%";
+//       if (percentEl) percentEl.textContent = "100%";
+//       loader.classList.add("fade-out");
+//       setTimeout(() => { loader.style.display = "none"; }, 600);
+//     }
+//   }
 
-  requestAnimationFrame(step);
-}
+//   requestAnimationFrame(step);
+// }
 
 // Init
 window.addEventListener("load", () => {
-  runSiteLoader();
+  // Load hero video after page is ready
+  const video = document.querySelector(".hero-video");
+  if (video) {
+    video.querySelectorAll("source").forEach(s => {
+      if (s.dataset.src) s.src = s.dataset.src;
+    });
+    video.load();
+  }
+
   initNavScroll();
   initHeroParallax();
   initHeroTextReveal();
@@ -385,5 +393,4 @@ window.addEventListener("load", () => {
   initRippleEffect();
   initRevealSystem();
   initCounterObserver();
-}
-)
+});

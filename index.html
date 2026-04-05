@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link rel="preload" as="image" href="IHSAAN LOGO.png">
+  <link rel="preload" as="image" href="hero-poster.jpg">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>IHSAAN</title>
   <meta name="description" content="IHSAAN — Where Muslim talent grows, leads, and belongs." />
@@ -9,7 +13,7 @@
   <!-- ✅ Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,7 +21,7 @@
 <body>
 
   <!-- Universal Loading Screen -->
-  <div id="siteLoader" class="site-loader" aria-hidden="true">
+  <!-- <div id="siteLoader" class="site-loader" aria-hidden="true">
     <div class="site-loader-inner">
       <img src="IHSAAN LOGO.png" alt="IHSAAN" class="site-loader-logo">
       <div class="site-loader-tagline">Elevating Faith-Driven Talent</div>
@@ -26,7 +30,7 @@
       </div>
       <div id="siteLoaderPercent" class="site-loader-percent" aria-hidden="true">0%</div>
     </div>
-  </div>
+  </div> -->
 
   <!-- ================= TOP NAV ================= -->
   <header class="topbar" id="top">
@@ -114,7 +118,7 @@
 
         <!-- ✅ HERO VIDEO (place behind text) -->
         <video class="hero-video" autoplay muted loop playsinline preload="none" poster="hero-poster.jpg">
-          <source src="hero-video.webm" type="video/webm">
+          <source data-src="hero-video.webm" type="video/webm">
           <source src="hero-video.mp4" type="video/mp4">
         </video>
 
@@ -428,52 +432,52 @@
           <!-- Row 1: scrolls left -->
           <div class="brand-carousel" aria-label="Partner logos carousel row 1">
             <div class="brand-track">
-              <div class="brand-tile"><img src="My Fridays.png" alt="My Fridays"></div>
-              <div class="brand-tile"><img src="Greentech.png" alt="Greentech"></div>
-              <div class="brand-tile"><img src="SMBF.png" alt="SMBF"></div>
-              <div class="brand-tile"><img src="DeenDeveleopers.png" alt="Deen Developers"></div>
-              <div class="brand-tile"><img src="HoganLovells.png" alt="Hogan Lovells"></div>
-              <div class="brand-tile"><img src="AOME.png" alt="AOME"></div>
-              <div class="brand-tile"><img src="accenture.png" alt="Accenture"></div>
-              <div class="brand-tile"><img src="PWC.png" alt="PwC"></div>
-              <div class="brand-tile"><img src="CubeNetwork.png" alt="Cube Network"></div>
-              <div class="brand-tile"><img src="Emerald.png" alt="Emerald"></div>
+              <div class="brand-tile"><img src="My Fridays.png" alt="My Fridays" loading="lazy"></div>
+              <div class="brand-tile"><img src="Greentech.png" alt="Greentech" loading="lazy"></div>
+              <div class="brand-tile"><img src="SMBF.png" alt="SMBF" loading="lazy"></div>
+              <div class="brand-tile"><img src="DeenDeveleopers.png" alt="Deen Developers" loading="lazy"></div>
+              <div class="brand-tile"><img src="HoganLovells.png" alt="Hogan Lovells" loading="lazy"></div>
+              <div class="brand-tile"><img src="AOME.png" alt="AOME" loading="lazy"></div>
+              <div class="brand-tile"><img src="accenture.png" alt="Accenture" loading="lazy"></div>
+              <div class="brand-tile"><img src="PWC.png" alt="PwC" loading="lazy"></div>
+              <div class="brand-tile"><img src="CubeNetwork.png" alt="Cube Network" loading="lazy"></div>
+              <div class="brand-tile"><img src="Emerald.png" alt="Emerald" loading="lazy"></div>
               <!-- duplicate for seamless loop -->
-              <div class="brand-tile"><img src="My Fridays.png" alt="My Fridays"></div>
-              <div class="brand-tile"><img src="Greentech.png" alt="Greentech"></div>
-              <div class="brand-tile"><img src="SMBF.png" alt="SMBF"></div>
-              <div class="brand-tile"><img src="DeenDeveleopers.png" alt="Deen Developers"></div>
-              <div class="brand-tile"><img src="HoganLovells.png" alt="Hogan Lovells"></div>
-              <div class="brand-tile"><img src="AOME.png" alt="AOME"></div>
-              <div class="brand-tile"><img src="accenture.png" alt="Accenture"></div>
-              <div class="brand-tile"><img src="PWC.png" alt="PwC"></div>
-              <div class="brand-tile"><img src="CubeNetwork.png" alt="Cube Network"></div>
-              <div class="brand-tile"><img src="Emerald.png" alt="Emerald"></div>
+              <div class="brand-tile"><img src="My Fridays.png" alt="My Fridays" loading="lazy"></div>
+              <div class="brand-tile"><img src="Greentech.png" alt="Greentech" loading="lazy"></div>
+              <div class="brand-tile"><img src="SMBF.png" alt="SMBF" loading="lazy"></div>
+              <div class="brand-tile"><img src="DeenDeveleopers.png" alt="Deen Developers" loading="lazy"></div>
+              <div class="brand-tile"><img src="HoganLovells.png" alt="Hogan Lovells" loading="lazy"></div>
+              <div class="brand-tile"><img src="AOME.png" alt="AOME" loading="lazy"></div>
+              <div class="brand-tile"><img src="accenture.png" alt="Accenture" loading="lazy"></div>
+              <div class="brand-tile"><img src="PWC.png" alt="PwC" loading="lazy"></div>
+              <div class="brand-tile"><img src="CubeNetwork.png" alt="Cube Network" loading="lazy"></div>
+              <div class="brand-tile"><img src="Emerald.png" alt="Emerald" loading="lazy"></div>
             </div>
           </div>
 
           <!-- Row 2: scrolls right (reverse) -->
           <div class="brand-carousel brand-carousel-reverse" aria-label="Partner logos carousel row 2">
             <div class="brand-track brand-track-reverse">
-              <div class="brand-tile"><img src="KPMC.png" alt="KPMG"></div>
-              <div class="brand-tile"><img src="MC.svg" alt="MC"></div>
-              <div class="brand-tile"><img src="MIPP.png" alt="MIPP"></div>
-              <div class="brand-tile"><img src="MIRE.png" alt="MIRE"></div>
-              <div class="brand-tile"><img src="MuslimsatAmazon.png" alt="Muslims at Amazon"></div>
-              <div class="brand-tile"><img src="MTF-Finance.png" alt="MTF Finance"></div>
-              <div class="brand-tile"><img src="Rail.png" alt="Rail"></div>
-              <div class="brand-tile"><img src="Wahed.png" alt="Wahed"></div>
-              <div class="brand-tile"><img src="WharfSisters.png" alt="Wharf Sisters"></div>
+              <div class="brand-tile"><img src="KPMC.png" alt="KPMG" loading="lazy"></div>
+              <div class="brand-tile"><img src="MC.svg" alt="MC" loading="lazy"></div>
+              <div class="brand-tile"><img src="MIPP.png" alt="MIPP" loading="lazy"></div>
+              <div class="brand-tile"><img src="MIRE.png" alt="MIRE" loading="lazy"></div>
+              <div class="brand-tile"><img src="MuslimsatAmazon.png" alt="Muslims at Amazon" loading="lazy"></div>
+              <div class="brand-tile"><img src="MTF-Finance.png" alt="MTF Finance" loading="lazy"></div>
+              <div class="brand-tile"><img src="Rail.png" alt="Rail" loading="lazy"></div>
+              <div class="brand-tile"><img src="Wahed.png" alt="Wahed" loading="lazy"></div>
+              <div class="brand-tile"><img src="WharfSisters.png" alt="Wharf Sisters" loading="lazy"></div>
               <!-- duplicate for seamless loop -->
-              <div class="brand-tile"><img src="KPMC.png" alt="KPMG"></div>
-              <div class="brand-tile"><img src="MC.svg" alt="MC"></div>
-              <div class="brand-tile"><img src="MIPP.png" alt="MIPP"></div>
-              <div class="brand-tile"><img src="MIRE.png" alt="MIRE"></div>
-              <div class="brand-tile"><img src="MuslimsatAmazon.png" alt="Muslims at Amazon"></div>
-              <div class="brand-tile"><img src="MTF-Finance.png" alt="MTF Finance"></div>
-              <div class="brand-tile"><img src="Rail.png" alt="Rail"></div>
-              <div class="brand-tile"><img src="Wahed.png" alt="Wahed"></div>
-              <div class="brand-tile"><img src="WharfSisters.png" alt="Wharf Sisters"></div>
+              <div class="brand-tile"><img src="KPMC.png" alt="KPMG" loading="lazy"></div>
+              <div class="brand-tile"><img src="MC.svg" alt="MC" loading="lazy"></div>
+              <div class="brand-tile"><img src="MIPP.png" alt="MIPP" loading="lazy"></div>
+              <div class="brand-tile"><img src="MIRE.png" alt="MIRE" loading="lazy"></div>
+              <div class="brand-tile"><img src="MuslimsatAmazon.png" alt="Muslims at Amazon" loading="lazy"></div>
+              <div class="brand-tile"><img src="MTF-Finance.png" alt="MTF Finance" loading="lazy"></div>
+              <div class="brand-tile"><img src="Rail.png" alt="Rail" loading="lazy"></div>
+              <div class="brand-tile"><img src="Wahed.png" alt="Wahed" loading="lazy"></div>
+              <div class="brand-tile"><img src="WharfSisters.png" alt="Wharf Sisters" loading="lazy"></div>
             </div>
           </div>
         </div>
