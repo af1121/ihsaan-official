@@ -586,7 +586,7 @@ img{ max-width:100%; display:block; }
 
 /* Mission */
 .slab{
-  background: linear-gradient(90deg, var(--navDark), var(--navMid), var(--navBright));
+  background: #0A3463;
   color:#fff;
 }
 .quote-strong{
@@ -637,18 +637,12 @@ img{ max-width:100%; display:block; }
 }
 @keyframes dividerGrow { to { transform: scaleX(1); } }
 
-/* THE PROBLEM SECTION */
-.problem-section {
-  background: linear-gradient(90deg, var(--navDark), var(--navMid), var(--navBright));
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-
 .problem-intro {
   color: rgba(255,255,255,.82);
   font-size: 17px;
   line-height: 1.75;
   max-width: 68ch;
-  margin: 16px auto 0;
+  margin: 40px auto 0;
   text-align: center;
 }
 
@@ -958,7 +952,7 @@ img{ max-width:100%; display:block; }
 .values-section {
   padding: 70px 0;
   /* Keeps your existing background gradient */
-  background: linear-gradient(90deg, var(--navDark), var(--navMid), var(--navBright));
+  background: #0A3463;
   border-top: 1px solid rgba(255, 255, 255, .08);
   border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
@@ -1085,7 +1079,7 @@ filter:
 /* EVENTS */
 .events-section{
   padding: 70px 0;
-  background: linear-gradient(180deg, rgba(7,26,67,1), rgba(11,35,90,1));
+  background: #0A3463;
 }
 .events-grid{
   display: flex;
@@ -1255,7 +1249,7 @@ filter:
 
 /* Final CTA */
 .final-cta{
-  background: linear-gradient(90deg, var(--navDark), var(--navMid), var(--navBright));
+  background: #0A3463;
   color:#fff;
   padding: 70px 0;
 }
@@ -1264,9 +1258,7 @@ filter:
   margin: 0;
   padding: 0;
   width: auto;
-  display: block;
   object-fit: contain;
-  margin: 0;
 }
 .lets-gradient{
   margin:0;
@@ -1286,7 +1278,14 @@ filter:
 }
 .final-cta .footer-logo{
   animation: breatheGlow 3s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
 }
+
+.footer .footer-logo {
+  margin: 0; 
+}
+
 @keyframes breatheGlow {
   0%, 100% { filter: drop-shadow(0 0 10px rgba(143,208,255,0.2)); }
   50% { filter: drop-shadow(0 0 25px rgba(143,208,255,0.5)); }
