@@ -173,7 +173,7 @@ img{ max-width:100%; display:block; }
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 50;
+  z-index: 51;
   padding-top: 15px;
   transition: opacity 0.3s ease;
 
@@ -395,6 +395,7 @@ img{ max-width:100%; display:block; }
   cursor:pointer;
   position: relative;
   padding: 0;
+  z-index: 51;
 }
 .burger span{
   display:block;
@@ -418,9 +419,24 @@ img{ max-width:100%; display:block; }
 }
 
 /* Mobile drawer */
-.mobile-drawer{
-  border-top:1px solid rgba(255,255,255,.14);
-  padding:14px 0 18px;
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 52, 99, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 49;
+  padding: 100px 20px 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateY(-100%);
+  transition: transform 0.35s var(--ease-out-expo);
+  visibility: hidden;
 }
 .mobile-drawer a{
   display:block;
@@ -430,6 +446,10 @@ img{ max-width:100%; display:block; }
   border-radius:12px;
   background: rgba(255,255,255,.10);
   border:1px solid rgba(255,255,255,.16);
+}
+.mobile-drawer.is-open {
+  transform: translateY(0);
+  visibility: visible;
 }
 .mobile-accordion{
   width:var(--container);
@@ -2001,7 +2021,7 @@ filter:
   .burger { width: 36px; height: 36px; }
 
   /* --- Mobile drawer --- */
-  .mobile-drawer { padding: 12px 0 16px; }
+  .mobile-drawer { padding: 100px 20px 30px; }
   .mobile-drawer a {
     padding: 14px 16px;
     font-size: 15px;

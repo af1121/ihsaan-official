@@ -33,7 +33,10 @@ function showPage(route) {
     if (nextPage) nextPage.classList.add("is-active");
 
     closeDropdown();
-    if (drawer) drawer.hidden = true;
+    if (drawer) {
+      drawer.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    }
     if (burger) burger.setAttribute("aria-expanded", "false");
     window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -70,7 +73,8 @@ if (burger && drawer) {
   burger.addEventListener("click", () => {
     const open = burger.getAttribute("aria-expanded") === "true";
     burger.setAttribute("aria-expanded", String(!open));
-    drawer.hidden = open;
+    drawer.hidden = false;
+    drawer.classList.toggle("is-open", !open);
     closeDropdown();
   });
 }
