@@ -51,7 +51,7 @@
             <a role="menuitem" href="#career-conferences" data-route="career-conferences">Career Conferences</a>
             <a role="menuitem" href="#faithful-talent" data-route="faithful-talent">Faithful Talent</a>
             <a role="menuitem" href="#opportunities-tracker" data-route="opportunities-tracker">Opportunities Tracker</a>
-            <a role="menuitem" href="#haqqathons" data-route="haqqathons">Haqqathons</a>
+            <a role="menuitem" href="#haqqathons" data-route="haqqathons">Hackathons</a>
             <a role="menuitem" href="#career-guides" data-route="career-guides">Career Guides</a>
             <a href="https://mymuslimmentor.com" target="_blank" rel="noopener">My Muslim Mentor</a>
 
@@ -98,7 +98,7 @@
           <a href="#career-conferences" data-route="career-conferences">Career Conferences</a>
           <a href="#faithful-talent" data-route="faithful-talent">Faithful Talent</a>
           <a href="#opportunities-tracker" data-route="opportunities-tracker">Opportunities Tracker</a>
-          <a href="#haqqathons" data-route="haqqathons">Haqqathons</a>
+          <a href="#haqqathons" data-route="haqqathons">Hackathons</a>
           <a href="#career-guides" data-route="career-guides">Career Guides</a>
           <a href="https://mymuslimmentor.com" target="_blank" rel="noopener">My Muslim Mentor</a>
         </div>
@@ -114,387 +114,199 @@
     <!-- ================= HOME ================= -->
     <section class="page is-active" id="page-home" data-page="home" aria-label="Home">
 
-      <section class="hero">
+      <section class="hero" aria-label="IHSAAN introduction">
 
         <!-- ✅ HERO VIDEO (place behind text) -->
-        <video class="hero-video" autoplay muted loop playsinline poster="hero-poster.webp">
-          <source data-src="hero-video.webm" type="video/webm">
-          <source data-src="hero-video.mp4" type="video/mp4">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+          <source data-src="hero-video-remade.mp4" type="video/mp4">
         </video>
 
         <!-- dark overlay so text stays readable -->
         <div class="hero-overlay"></div>
-        <div class="hero-vintage-overlay" aria-hidden="true"></div>
+        <div class="hero-tv-effect" aria-hidden="true"></div>
 
-        <!-- Floating gradient orbs -->
-        <div class="hero-orbs" aria-hidden="true">
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
+        <div class="hero-shell">
+          <div class="hero-content">
+            <h1 id="heroTitle">Elevating Faith-Driven Talent</h1>
+            <p class="hero-intro">Empowering every Muslim student and young professional with the opportunities, resources, and networks to unlock their dream careers and build a more God-conscious, ethical society.</p>
+
+            <div class="hero-actions">
+              <a class="btn hero-cta" href="#our-programmes">Start Your Career Journey</a>
+              <a class="hero-secondary" href="#who-we-are" data-route="who-we-are">Read our story</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Subtle particle effect -->
-        <canvas id="heroParticles" class="hero-particles" aria-hidden="true"></canvas>
+      </section>
 
-        <div class="hero-content">
-          <h1 id="heroTitle">Elevating Faith-Driven Talent</h1>
+      <!-- STORY SECTION -->
+      <section class="section story-section" aria-label="Community Story" data-reveal="fade-up">
+        <div class="container story-inner">
+          <div class="story-reality-grid">
+            <div class="story-reality-content">
+              <div class="story-hero" data-reveal="fade-up" data-reveal-delay="80">
+                <p class="story-line">You aced your exams while fasting in Ramadan. Kept your prayers through late library nights, carried your family's hopes, and did the hard work. Yet for too many Muslims, rising educational success in Muslim communities isn't translating into the job market.</p>
+              </div>
 
-          <div class="btn-row center">
-            <a class="btn hero-cta" href="#our-programmes">EXPLORE OUR RESOURCES</a>
+              <figure class="story-research-card" data-reveal="fade-up" data-reveal-delay="100">
+                <p class="story-quote-lead"><a href="https://www.gov.uk/government/news/young-muslims-in-the-uk-face-enormous-social-mobility-barriers" target="_blank" rel="noopener">According to the UK Government's Social Mobility Commission:</a></p>
+                <blockquote>"Muslims are <span class="quote-highlight">excluded, discriminated against, or failed</span>, at all stages of their transition from education to employment."</blockquote>
+              </figure>
+
+              <h3 class="story-evidence-heading" data-reveal="fade-up" data-reveal-delay="120">The gap shows up in real life.</h3>
+
+              <ul class="story-evidence-list" data-reveal="fade-up" data-reveal-delay="140">
+                <li><span class="evidence-stat evidence-stat-img"><img src="Money.png?v=20260417" alt="" loading="lazy"></span><span>Muslims are <strong>twice as likely</strong> to live in the <mark>most deprived areas</mark>.</span></li>
+                <li><span class="evidence-stat evidence-stat-img"><img src="management.png?v=20260417" alt="" loading="lazy"></span><span>Only <strong>6% of British Muslims</strong> reach high-level professional or managerial roles compared to <strong>10%</strong> of the general population.</span></li>
+                <li><span class="evidence-stat evidence-stat-img"><img src="Hijabi.png?v=20260417" alt="" loading="lazy"></span><span><strong>69% of UK Muslims</strong> say they have experienced <mark>Islamophobia at work</mark>.</span></li>
+                <li><span class="evidence-stat evidence-stat-img"><img src="Values.png?v=20260417" alt="" loading="lazy"></span><span>Many Muslim students also navigate career choices where workplace culture and industry norms, can clash with <strong>faith, values, and ethical boundaries</strong>.</span></li>
+              </ul>
+
+            </div>
           </div>
-
-          <p class="hero-sub">
-            <span class="pillars-strong">Opportunities</span> ·
-            <span class="pillars-strong">Resources</span> ·
-            <span class="pillars-strong">Networks</span>
-          </p>
-
         </div>
       </section>
 
-      <!-- MISSION -->
-      <section class="section slab" data-reveal="fade-up">
-        <div class="container">
-          <div class="center">
-            <h2 class="h2 white">Our Mission</h2>
-            <div class="mission-divider" data-reveal="fade-in" data-reveal-delay="300"></div>
-          </div>
+      <section class="section solution-section" aria-label="How IHSAAN helps">
+        <div class="container solution-inner" data-reveal="fade-up">
+          <p class="story-bridge" data-reveal="fade-up" data-reveal-delay="40"><strong>The issue isn't talent or ambition.</strong> It's the barriers standing in the way. The same community facing these barriers is also one of the youngest in the country, full of <strong>energy</strong>, <strong>ambition</strong>, and <strong>untapped talent</strong> waiting for the chance to thrive.</p>
 
-          <div class="mission-panel" data-reveal="fade-up" data-reveal-delay="200">
-            <p class="mission-text">
-              To empower every Muslim student and young professional with
-              <strong class="quote-strong">opportunities, resources, and networks</strong>
-              to unlock their dream careers through which they can build a more God-conscious and ethical society.
-              <br><br>
-              IHSAAN strives not only to break down barriers to entry, but fundamentally to develop the next generation of Muslim leaders who can contribute meaningfully at the very highest levels.
-            </p>
-          </div>
-          <div class="container">
-          <div class="center" data-reveal="fade-up">
-            <!-- <h2 class="h2 white">The Problem</h2> -->
-            <!-- <div class="mission-divider" data-reveal="fade-in" data-reveal-delay="300"></div> -->
-            <p class="problem-intro">
-              The data is clear. Muslim students in the UK face structural barriers that limit their professional potential - not because of lack of talent, but because of systemic exclusion.
-            </p>
-          </div>
-
-          <div class="problem-stats" data-reveal="fade-up" data-reveal-delay="200">
-
-            <div class="problem-stat">
-              <div class="problem-quote-mark">&ldquo;</div>
-              <div class="problem-pull-quote">
-                Muslims are excluded, discriminated against, or failed, at all stages of their transition from education to employment.
+          <div class="story-youth-pivot" data-reveal="fade-up" data-reveal-delay="80">
+            <p class="youth-stat-intro"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religionbyageandsexenglandandwales/latest" target="_blank" rel="noopener">Muslims are the <span class="youth-highlight">youngest religious group</span> in England and Wales, with an average age of 27.</a></p>
+            <div class="youth-compare" aria-label="Average age comparison">
+              <div class="youth-age youth-age-feature">
+                <span class="youth-number">27</span>
+                <span class="youth-label">Average age: Muslims</span>
               </div>
-              <div class="problem-source">
-                <span class="problem-source-dot"></span>
-                Social Mobility Commission
+              <span class="youth-vs">13 years younger than</span>
+              <div class="youth-age">
+                <span class="youth-number">40</span>
+                <span class="youth-label">Average age: General population</span>
               </div>
             </div>
-
-            <div class="problem-divider-vert" aria-hidden="true"></div>
-
-            <div class="problem-stat">
-              <div class="problem-quote-mark">&ldquo;</div>
-              <div class="problem-figure">6%</div>
-              <div class="problem-desc">
-                Only 6% of British Muslims occupy high-level professional or managerial roles vs 10% across the UK population
-              </div>
-              <div class="problem-source">
-                <span class="problem-source-dot"></span>
-                Social Mobility Commission, 2017
-              </div>
-            </div>
-
           </div>
 
-          <div class="problem-footer" data-reveal="fade-up" data-reveal-delay="400">
-            IHSAAN exists to change this.
-          </div>
-
-        </div>
+          <br>
+          <p class="solution-unlock">IHSAAN unlocks that young talent by connecting Muslim students and professionals to employers, mentors, opportunities, and faith-conscious career support.</p>
         </div>
       </section>
 
-      <!-- THE PROBLEM -->
-      <!-- <section class="section problem-section" aria-label="The Problem">
-        <div class="container">
-          <div class="center" data-reveal="fade-up">
-            <h2 class="h2 white">The Problem</h2>
-            <div class="mission-divider" data-reveal="fade-in" data-reveal-delay="300"></div>
-            <p class="problem-intro">
-              The data is clear. Muslim students in the UK face structural barriers that limit their professional potential - not because of lack of talent, but because of systemic exclusion.
-            </p>
-          </div>
-
-          <div class="problem-stats" data-reveal="fade-up" data-reveal-delay="200">
-
-            <div class="problem-stat">
-              <div class="problem-quote-mark">&ldquo;</div>
-              <div class="problem-pull-quote">
-                Muslims are excluded, discriminated against, or failed, at all stages of their transition from education to employment.
-              </div>
-              <div class="problem-source">
-                <span class="problem-source-dot"></span>
-                Social Mobility Commission
-              </div>
-            </div>
-
-            <div class="problem-divider-vert" aria-hidden="true"></div>
-
-            <div class="problem-stat">
-              <div class="problem-quote-mark">&ldquo;</div>
-              <div class="problem-figure">6%</div>
-              <div class="problem-desc">
-                Only 6% of British Muslims occupy high-level professional or managerial roles vs 10% across the UK population
-              </div>
-              <div class="problem-source">
-                <span class="problem-source-dot"></span>
-                Social Mobility Commission, 2017
-              </div>
-            </div>
-
-          </div>
-
-          <div class="problem-footer" data-reveal="fade-up" data-reveal-delay="400">
-            IHSAAN exists to change this.
-          </div>
-
-        </div>
-      </section> -->
-
-
-      <!-- PROGRAMMES (✅ now WHITE background via CSS) -->
+      <!-- PROGRAMMES -->
       <section id="our-programmes" class="section programmes-section">
         <div class="container center">
-          <h2 class="h2" data-reveal="fade-up">Our Programmes</h2>
+          <h2 class="h2" data-reveal="fade-up">Start Your Career Journey</h2>
+          <p class="programmes-subtitle" data-reveal="fade-up" data-reveal-delay="80">Need a CV template, interview advice, a 1:1 chat with someone in your industry, a hackathon to test your skills, or a careers fair to build your network? We have you covered.</p>
 
           <div class="scroller" aria-label="Programme cards">
+            <a class="prog-card" href="https://ihsaannetwork.notion.site/careers-essentials" target="_blank" rel="noopener" data-reveal="fade-up" data-reveal-delay="0">
+              <div class="img" style="background-image:url('career-guides.webp')"></div>
+              <div class="resource-num">#1</div>
+              <div class="card-content">
+                <div class="label">Career Guides</div>
+                <div class="card-desc">CV templates, interview advice and online assessment practice</div>
+              </div>
+            </a>
+
             <a class="prog-card" href="#career-conferences" data-route="career-conferences" data-reveal="fade-up" data-reveal-delay="0">
               <div class="img" style="background-image:url('career-conferences.webp')"></div>
-              <div class="label">Career Conferences</div>
+              <div class="resource-num">#2</div>
               <div class="card-content">
-              <div class="card-desc">Explore careers, meet employers, and grow your network at conferences hosted across the UK.</div>
+                <div class="label">Career Conferences</div>
+                <div class="card-desc">Explore careers, meet employers, and grow your network at conferences hosted across the UK.</div>
               </div>
             </a>
 
             <a class="prog-card" href="#faithful-talent" data-route="faithful-talent" data-reveal="fade-up" data-reveal-delay="80">
               <div class="img" style="background-image:url('faithful_talent.webp')"></div>
-              <div class="label">Faithful Talent</div>
+              <div class="resource-num">#3</div>
               <div class="card-content">
-              <div class="card-desc">Connecting Muslim talent with leading employers.</div>
+                <div class="label">Faithful Talent</div>
+                <div class="card-desc">Connecting Muslim talent with leading employers.</div>
               </div>
             </a>
             <a class="prog-card" href="https://mymuslimmentor.com/" target="_blank" rel="noopener" data-reveal="fade-up" data-reveal-delay="160">
               <div class="img" style="background-image:url('mmm.webp')"></div>
-              <div class="label">My Muslim Mentor</div>
+              <div class="resource-num">#4</div>
               <div class="card-content">
-              <div class="card-desc">1:1 mentorship with professionals in your field, tailored to your goals.</div>
+                <div class="label">My Muslim Mentor</div>
+                <div class="card-desc">1:1 mentorship with professionals in your field, tailored to your goals.</div>
               </div>
             </a>
-            <a class="prog-card" href="#opportunities-tracker" data-route="opportunities-tracker" data-reveal="fade-up" data-reveal-delay="240">
+            <a class="prog-card" href="https://ihsaannetwork.notion.site/opportunities-tracker" target="_blank" rel="noopener" data-reveal="fade-up" data-reveal-delay="240">
               <div class="img" style="background-image:url('oppTracker.webp')"></div>
-              <div class="label">Opportunities Tracker</div>
+              <div class="resource-num">#5</div>
               <div class="card-content">
-              <div class="card-desc">Find internships, jobs, and volunteering opportunities through a regularly updated tracker.</div>
+                <div class="label">Opportunities Tracker</div>
+                <div class="card-desc">Find internships, jobs, and volunteering opportunities through a regularly updated tracker.</div>
               </div>
             </a>
             <a class="prog-card" href="#haqqathons" data-route="haqqathons" data-reveal="fade-up" data-reveal-delay="320">
               <div class="img" style="background-image:url('Haqqathons.webp')"></div>
-              <div class="label">Haqqathons</div>
+              <div class="resource-num">#6</div>
               <div class="card-content">
-              <div class="card-desc">Impactful hackathons tackling real-world projects.</div>
-              </div>
-            </a>
-
-            <a class="prog-card" href="#career-guides" data-route="career-guides" data-reveal="fade-up" data-reveal-delay="400">
-              <div class="img" style="background-image:url('career-guides.webp')"></div>
-              <div class="label">Career Guides</div>
-              <div class="card-content">
-              <div class="card-desc">CV templates, interview advice and online assessment practice</div>
+                <div class="label">Hackathons</div>
+                <div class="card-desc">Impactful hackathons tackling real-world projects.</div>
               </div>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- IMPACT (keep as-is styling) -->
-      <!-- <section class="section impact-section">
-        <div class="container center">
-          <div class="impact" id="impactSection">
-            <div class="bg placeholder"></div>
-            <div class="impact-inner">
-              <div class="impact-title">Our Impact</div>
-
-              <div class="stats">
-                <div class="stat">
-                  <div class="cap">EVENT &amp; CONFERENCE ATTENDEES</div>
-                  <p class="num counter" data-target="2000">0</p>
-                  <p class="sub">Across our nationwide career conferences.</p>
-                </div>
-
-                <div class="stat">
-                  <div class="cap">MONTHLY ENGAGEMENT</div>
-                  <p class="num counter" data-target="1500">0</p>
-                  <p class="sub">With our resources and mentorship initiatives</p>
-                </div>
-
-                <div class="stat">
-                  <div class="cap">STUDENTS REACHED</div>
-                  <p class="num counter" data-target="10000">0</p>
-                  <p class="sub">Across the UK &amp; Ireland.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-<section class="section impact-section" id="impactSection"> 
-  <div class="container center">
-    
-    <div class="impact-title" data-reveal="fade-up">Our Impact</div>
-
-    <div class="stats">
-      <!-- Item 1 -->
-      <div class="stat" data-reveal="fade-up" data-reveal-delay="0">
-        <div class="cap">Conference Attendees</div>
-        <p class="num counter" data-target="1250">0</p>
-        <div class="sub">Across our nationwide career conferences in London, the Midlands, and the North.</div>
-      </div>
-
-      <!-- Item 2 -->
-      <div class="stat" data-reveal="fade-up" data-reveal-delay="150">
-        <div class="cap">Students Reached Monthly</div>
-        <p class="num counter" data-target="80000">0</p>
-        <div class="sub">Through our digital platforms, resources, and social media channels.</div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="stat" data-reveal="fade-up" data-reveal-delay="300">
-        <div class="cap">Mentors &amp; Professionals</div>
-        <p class="num counter" data-target="70">0</p>
-        <div class="sub">Industry professionals across 10+ sectors in our mentorship network.</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-      <!-- OUR VALUES -->
-<section class="values-section" aria-label="Our Values">
-  <div class="container">
-    <div class="center" data-reveal="fade-up">
-      <h2 class="h2 white">Our Values</h2>
-      <p class="values-sub">
-        Rooted in faith, driven by purpose &mdash; these are the principles that shape everything we do.
-      </p>
-    </div>
-
-    <div class="values-icons">
-      <figure class="value-icon" data-reveal="scale-up" data-reveal-delay="0">
-        <div class="value-icon-media">
-          <img src="Ihsaan.webp" alt="Excellence (Ihsaan)">
-        </div>
-        <figcaption>
-          <div class="v-title">Excellence</div>
-        </figcaption>
-      </figure>
-
-      <figure class="value-icon" data-reveal="scale-up" data-reveal-delay="100">
-        <div class="value-icon-media">
-          <img src="Taqwa.webp" alt="God-Consciousness (Taqwa)">
-        </div>
-        <figcaption>
-          <div class="v-title">God-Consciousness</div>
-        </figcaption>
-      </figure>
-
-      <figure class="value-icon" data-reveal="scale-up" data-reveal-delay="200">
-        <div class="value-icon-media">
-          <img src="Amanah.webp" alt="Service (Amanah)">
-        </div>
-        <figcaption>
-          <div class="v-title">Trust</div>
-        </figcaption>
-      </figure>
-
-      <figure class="value-icon" data-reveal="scale-up" data-reveal-delay="300">
-        <div class="value-icon-media">
-          <img src="Empowerment.webp" alt="Empowerment (Tamkeen)">
-        </div>
-        <figcaption>
-          <div class="v-title">Ambition</div>
-        </figcaption>
-      </figure>
-
-      <figure class="value-icon" data-reveal="scale-up" data-reveal-delay="400">
-        <div class="value-icon-media">
-          <img src="Shura.webp" alt="Consultation (Shura)">
-        </div>
-        <figcaption>
-          <div class="v-title">Service</div>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-
-      <!-- WHO WE HAVE WORKED WITH (✅ now WHITE background via CSS) -->
-      <section class="worked-with" aria-label="Who we have worked with">
+      <!-- PROFESSIONAL BACKGROUNDS -->
+      <section class="worked-with" aria-label="Professional backgrounds across our events">
         <div class="container">
           <div class="center" data-reveal="fade-up">
-            <div class="worked-title">Who we have worked with</div>
+            <div class="worked-title">Professional Backgrounds Across Our Events</div>
           </div>
 
           <!-- Row 1: scrolls left -->
           <div class="brand-carousel" aria-label="Partner logos carousel row 1">
             <div class="brand-track">
-              <div class="brand-tile"><img src="My Fridays.webp" alt="My Fridays" loading="lazy"></div>
-              <div class="brand-tile"><img src="Greentech.webp" alt="Greentech" loading="lazy"></div>
-              <div class="brand-tile"><img src="SMBF.webp" alt="SMBF" loading="lazy"></div>
-              <div class="brand-tile"><img src="DeenDeveleopers.webp" alt="Deen Developers" loading="lazy"></div>
-              <div class="brand-tile"><img src="HoganLovells.webp" alt="Hogan Lovells" loading="lazy"></div>
-              <div class="brand-tile"><img src="AOME.webp" alt="AOME" loading="lazy"></div>
-              <div class="brand-tile"><img src="accenture.webp" alt="Accenture" loading="lazy"></div>
-              <div class="brand-tile"><img src="PWC.webp" alt="PwC" loading="lazy"></div>
-              <div class="brand-tile"><img src="CubeNetwork.webp" alt="Cube Network" loading="lazy"></div>
-              <div class="brand-tile"><img src="Emerald.webp" alt="Emerald" loading="lazy"></div>
+              <a class="brand-tile" href="https://www.myfridays.com/" target="_blank" rel="noopener"><img src="My Fridays.webp" alt="My Fridays" loading="lazy"></a>
+              <a class="brand-tile" href="https://gtaf.org/" target="_blank" rel="noopener"><img src="Greentech.webp" alt="Greentech" loading="lazy"></a>
+              <a class="brand-tile" href="https://smbf.global/" target="_blank" rel="noopener"><img src="SMBF.webp" alt="SMBF" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.deendevelopers.com/" target="_blank" rel="noopener"><img src="DeenDeveleopers.webp" alt="Deen Developers" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.hoganlovells.com/" target="_blank" rel="noopener"><img src="HoganLovells.png?v=20260417" alt="Hogan Lovells" loading="lazy"></a>
+              <a class="brand-tile" href="https://muslimengineers.uk/" target="_blank" rel="noopener"><img src="AOME.png?v=20260417" alt="AOME" loading="lazy"></a>
+              <a class="brand-tile brand-tile-accenture" href="https://www.accenture.com/" target="_blank" rel="noopener"><img src="accenture.webp" alt="Accenture" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.pwc.co.uk/" target="_blank" rel="noopener"><img src="PWC.webp" alt="PwC" loading="lazy"></a>
+              <a class="brand-tile" href="https://bio.site/cubenetwork" target="_blank" rel="noopener"><img src="CubeNetwork.webp" alt="Cube Network" loading="lazy"></a>
+              <a class="brand-tile" href="https://emeraldnetwork.org.uk/" target="_blank" rel="noopener"><img src="Emerald.webp?v=20260417" alt="Emerald" loading="lazy"></a>
               <!-- duplicate for seamless loop -->
-              <div class="brand-tile"><img src="My Fridays.webp" alt="My Fridays" loading="lazy"></div>
-              <div class="brand-tile"><img src="Greentech.webp" alt="Greentech" loading="lazy"></div>
-              <div class="brand-tile"><img src="SMBF.webp" alt="SMBF" loading="lazy"></div>
-              <div class="brand-tile"><img src="DeenDeveleopers.webp" alt="Deen Developers" loading="lazy"></div>
-              <div class="brand-tile"><img src="HoganLovells.webp" alt="Hogan Lovells" loading="lazy"></div>
-              <div class="brand-tile"><img src="AOME.webp" alt="AOME" loading="lazy"></div>
-              <div class="brand-tile"><img src="accenture.webp" alt="Accenture" loading="lazy"></div>
-              <div class="brand-tile"><img src="PWC.webp" alt="PwC" loading="lazy"></div>
-              <div class="brand-tile"><img src="CubeNetwork.webp" alt="Cube Network" loading="lazy"></div>
-              <div class="brand-tile"><img src="Emerald.webp" alt="Emerald" loading="lazy"></div>
+              <a class="brand-tile" href="https://www.myfridays.com/" target="_blank" rel="noopener"><img src="My Fridays.webp" alt="My Fridays" loading="lazy"></a>
+              <a class="brand-tile" href="https://gtaf.org/" target="_blank" rel="noopener"><img src="Greentech.webp" alt="Greentech" loading="lazy"></a>
+              <a class="brand-tile" href="https://smbf.global/" target="_blank" rel="noopener"><img src="SMBF.webp" alt="SMBF" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.deendevelopers.com/" target="_blank" rel="noopener"><img src="DeenDeveleopers.webp" alt="Deen Developers" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.hoganlovells.com/" target="_blank" rel="noopener"><img src="HoganLovells.png?v=20260417" alt="Hogan Lovells" loading="lazy"></a>
+              <a class="brand-tile" href="https://muslimengineers.uk/" target="_blank" rel="noopener"><img src="AOME.png?v=20260417" alt="AOME" loading="lazy"></a>
+              <a class="brand-tile brand-tile-accenture" href="https://www.accenture.com/" target="_blank" rel="noopener"><img src="accenture.webp" alt="Accenture" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.pwc.co.uk/" target="_blank" rel="noopener"><img src="PWC.webp" alt="PwC" loading="lazy"></a>
+              <a class="brand-tile" href="https://bio.site/cubenetwork" target="_blank" rel="noopener"><img src="CubeNetwork.webp" alt="Cube Network" loading="lazy"></a>
+              <a class="brand-tile" href="https://emeraldnetwork.org.uk/" target="_blank" rel="noopener"><img src="Emerald.webp?v=20260417" alt="Emerald" loading="lazy"></a>
             </div>
           </div>
 
           <!-- Row 2: scrolls right (reverse) -->
           <div class="brand-carousel brand-carousel-reverse" aria-label="Partner logos carousel row 2">
             <div class="brand-track brand-track-reverse">
-              <div class="brand-tile"><img src="KPMC.webp" alt="KPMG" loading="lazy"></div>
-              <div class="brand-tile"><img src="MC.svg" alt="MC" loading="lazy"></div>
-              <div class="brand-tile"><img src="MIPP.webp" alt="MIPP" loading="lazy"></div>
-              <div class="brand-tile"><img src="MIRE.webp" alt="MIRE" loading="lazy"></div>
-              <div class="brand-tile"><img src="MuslimsatAmazon.webp" alt="Muslims at Amazon" loading="lazy"></div>
-              <div class="brand-tile"><img src="MTF-Finance.webp" alt="MTF Finance" loading="lazy"></div>
+              <a class="brand-tile" href="https://kpmg.com/uk/en/home.html" target="_blank" rel="noopener"><img src="KPMC.png?v=20260417" alt="KPMG" loading="lazy"></a>
+              <a class="brand-tile" href="https://muslimcensus.co.uk/" target="_blank" rel="noopener"><img src="MC.svg" alt="MC" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.muslimsinpp.org/" target="_blank" rel="noopener"><img src="MIPP.webp" alt="MIPP" loading="lazy"></a>
+              <a class="brand-tile brand-tile-mire" href="https://www.muslimsinrealestate.co.uk/" target="_blank" rel="noopener"><img src="MIRE.webp" alt="MIRE" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.aboutamazon.co.uk/" target="_blank" rel="noopener"><img src="MuslimsatAmazon.webp" alt="Muslims at Amazon" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.mtf.co.nz/" target="_blank" rel="noopener"><img src="MTF-Finance.webp" alt="MTF Finance" loading="lazy"></a>
               <div class="brand-tile"><img src="Rail.webp" alt="Rail" loading="lazy"></div>
-              <div class="brand-tile"><img src="Wahed.webp" alt="Wahed" loading="lazy"></div>
+              <a class="brand-tile brand-tile-wahed" href="https://www.wahed.com/" target="_blank" rel="noopener"><img src="Wahed.webp" alt="Wahed" loading="lazy"></a>
               <div class="brand-tile"><img src="WharfSisters.webp" alt="Wharf Sisters" loading="lazy"></div>
               <!-- duplicate for seamless loop -->
-              <div class="brand-tile"><img src="KPMC.webp" alt="KPMG" loading="lazy"></div>
-              <div class="brand-tile"><img src="MC.svg" alt="MC" loading="lazy"></div>
-              <div class="brand-tile"><img src="MIPP.webp" alt="MIPP" loading="lazy"></div>
-              <div class="brand-tile"><img src="MIRE.webp" alt="MIRE" loading="lazy"></div>
-              <div class="brand-tile"><img src="MuslimsatAmazon.webp" alt="Muslims at Amazon" loading="lazy"></div>
-              <div class="brand-tile"><img src="MTF-Finance.webp" alt="MTF Finance" loading="lazy"></div>
+              <a class="brand-tile" href="https://kpmg.com/uk/en/home.html" target="_blank" rel="noopener"><img src="KPMC.png?v=20260417" alt="KPMG" loading="lazy"></a>
+              <a class="brand-tile" href="https://muslimcensus.co.uk/" target="_blank" rel="noopener"><img src="MC.svg" alt="MC" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.muslimsinpp.org/" target="_blank" rel="noopener"><img src="MIPP.webp" alt="MIPP" loading="lazy"></a>
+              <a class="brand-tile brand-tile-mire" href="https://www.muslimsinrealestate.co.uk/" target="_blank" rel="noopener"><img src="MIRE.webp" alt="MIRE" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.aboutamazon.co.uk/" target="_blank" rel="noopener"><img src="MuslimsatAmazon.webp" alt="Muslims at Amazon" loading="lazy"></a>
+              <a class="brand-tile" href="https://www.mtf.co.nz/" target="_blank" rel="noopener"><img src="MTF-Finance.webp" alt="MTF Finance" loading="lazy"></a>
               <div class="brand-tile"><img src="Rail.webp" alt="Rail" loading="lazy"></div>
-              <div class="brand-tile"><img src="Wahed.webp" alt="Wahed" loading="lazy"></div>
+              <a class="brand-tile brand-tile-wahed" href="https://www.wahed.com/" target="_blank" rel="noopener"><img src="Wahed.webp" alt="Wahed" loading="lazy"></a>
               <div class="brand-tile"><img src="WharfSisters.webp" alt="Wharf Sisters" loading="lazy"></div>
             </div>
           </div>
@@ -504,6 +316,14 @@
       <!-- EVENTS CALENDAR -->
       <section class="events-section" aria-label="Events Calendar">
         <div class="container events-grid">
+          <div class="events-copy" data-reveal="fade-right" data-reveal-delay="120">
+            <h2 class="events-heading">Events<br/>calendar</h2>
+            <p class="events-text">
+              Never miss an opportunity. Subscribe to our calendar and be the first to know about conferences, workshops, and career programmes near you.
+            </p>
+            <a class="btn events-btn" href="https://luma.com/calendar/cal-8amaiM2VigRIqjq" target="_blank" rel="noopener">SIGN UP</a>
+          </div>
+
           <div class="events-card" data-reveal="fade-right">
             <div class="events-img-wrap">
               <!-- <img src="events-calendar.png" alt="IHSAAN Events Calendar preview"> -->
@@ -511,47 +331,52 @@
               <iframe
                 src="https://luma.com/embed/calendar/cal-8amaiM2VigRIqjq/events?responsive=true"
                 width="600"
-                height="450"
+                height="340"
                 frameborder="0"
-                style="border: 1px solid #bfcbda88; border-radius: 4px;"
+                style="border: 0; border-radius: 6px;"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0">
             </iframe>
             </div>
             <div class="events-card-meta">
-              <div class="events-card-title">IHSAAN · Events Calendar</div>
+              <div class="events-card-title">IHSAAN Events Calendar</div>
               <div class="events-card-sub">
                 Browse and subscribe to upcoming IHSAAN events &mdash; conferences, workshops, and networking sessions designed to accelerate your career.
               </div>
               <div class="events-site">luma.com</div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="events-copy" data-reveal="fade-left" data-reveal-delay="200">
-            <h2 class="events-heading">Events<br/>calendar</h2>
-            <p class="events-text">
-              Never miss an opportunity. Subscribe to our calendar and be the first to know about conferences, workshops, and career programmes near you.
-            </p>
-            <a class="btn events-btn" href="https://luma.com/calendar/cal-8amaiM2VigRIqjq" target="_blank" rel="noopener">SIGN UP</a>
+      <section class="contact-section" aria-label="Contact IHSAAN">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-reveal="fade-right">
+            <p class="contact-kicker">Contact us</p>
+            <h2>Start the conversation</h2>
+            <p>Tell us who you are, how we can reach you, and what you would like to speak about. We will get back to you as soon as we can.</p>
+            <p class="contact-email-option">Prefer email? Reach us at <a href="mailto:ihsaan@fosis.org.uk">ihsaan@fosis.org.uk</a>.</p>
           </div>
-        </div>
-      </section>
 
-      <!-- DONATE SECTION -->
-      <section class="donate-strip" data-reveal="fade-up">
-        <div class="container-donate-inner">
-          <p class="donate-text">Help us empower the next generation of Muslim professionals.</p>
-          <a href="#" class="donate-btn">Donate Now</a>
-        </div>
-      </section>
+          <form class="contact-form" action="mailto:ihsaan@fosis.org.uk" method="post" enctype="text/plain" data-reveal="fade-left" data-reveal-delay="120">
+            <label>
+              Your name
+              <input type="text" name="Name" placeholder="Your full name" required>
+            </label>
 
-      <section class="final-cta center">
-        <div class="container">
-          <img class="footer-logo" src="IHSAAN LOGO.webp" alt="IHSAAN" data-reveal="scale-up" />
-          <h2 class="lets-gradient" data-reveal="fade-up" data-reveal-delay="100">Let's get started.</h2>
-          <a class="btn partner-btn" href="#get-involved" data-route="get-involved" data-reveal="fade-up" data-reveal-delay="200">PARTNER WITH US</a>
-          <div class="email" data-reveal="fade-in" data-reveal-delay="300">ihsaan@fosis.org.uk</div>
+            <label>
+              Email address
+              <input type="email" name="Email" placeholder="name@example.com" required>
+            </label>
+
+            <label>
+              Message
+              <textarea name="Message" rows="5" placeholder="Partnerships, events, careers support, volunteering, or anything else we should know." required></textarea>
+            </label>
+
+            <button class="btn contact-submit" type="submit">Send Message</button>
+          </form>
         </div>
       </section>
 
@@ -907,7 +732,7 @@
     <section class="page" id="page-haqqathons" data-page="haqqathons">
   <div class="page-head">
     <div class="container center">
-      <h1>Haqqathons</h1>
+      <h1>Hackathons</h1>
       <p class="white-muted">Weekend hackathons where faith-driven innovators build solutions to real-world problems.</p>
     </div>
   </div>
@@ -917,9 +742,9 @@
 
       <!-- Overview Card -->
       <div class="card" data-reveal="fade-up">
-        <h2 class="h2">What Are Haqqathons?</h2>
+        <h2 class="h2">What Are Hackathons?</h2>
         <p class="darkp">
-          Haqqathons bring together the brightest value-driven young people for an intensive weekend of building &mdash; creating impactful technology solutions to real-world problems. Part hackathon, part social enterprise incubator, these events are where ideas become action.
+          Hackathons bring together the brightest value-driven young people for an intensive weekend of building &mdash; creating impactful technology solutions to real-world problems. Part hackathon, part social enterprise incubator, these events are where ideas become action.
         </p>
         <p class="darkp">
           <strong>Our mission:</strong> Empowering principled visionaries to solve real problems for real impact.
@@ -929,12 +754,12 @@
         </p>
       </div>
 
-      <!-- Haqqathon Events -->
+      <!-- Hackathon Events -->
       <div class="haqqathon-events">
 
-        <!-- 2026 Haqqathon Manchester -->
+        <!-- 2026 Hackathon Manchester -->
         <div class="haqqathon-card" data-reveal="fade-left" data-reveal-delay="0">
-          <h3>British Muslim Heritage Centre 2026 Haqqathon</h3>
+          <h3>British Muslim Heritage Centre 2026 Hackathon</h3>
           <p class="participants">80+ participants • 24 hours</p>
           <h4>Notable Outcomes:</h4>
           <ul>
@@ -944,9 +769,9 @@
           </ul>
         </div>
 
-        <!-- 2026 Haqqathon Dublin -->
+        <!-- 2026 Hackathon Dublin -->
         <div class="haqqathon-card" data-reveal="fade-left" data-reveal-delay="150">
-          <h3>Technological University of Dublin 2026 Haqqathon</h3>
+          <h3>Technological University of Dublin 2026 Hackathon</h3>
           <p class="participants">60+ participants • 24 hours</p>
           <h4>Notable Outcomes:</h4>
           <ul>
@@ -956,9 +781,9 @@
           </ul>
         </div>
 
-        <!-- 2025 Haqqathon -->
+        <!-- 2025 Hackathon -->
         <div class="haqqathon-card" data-reveal="fade-left" data-reveal-delay="300">
-          <h3>Imperial College 2025 Haqqathon</h3>
+          <h3>Imperial College 2025 Hackathon</h3>
           <p class="participants">80+ participants • 24 hours</p>
           <h4>Notable Outcomes:</h4>
           <ul>
@@ -968,9 +793,9 @@
           </ul>
         </div>
 
-        <!-- 2024 Haqqathon -->
+        <!-- 2024 Hackathon -->
         <div class="haqqathon-card" data-reveal="fade-left" data-reveal-delay="450">
-          <h3>Imperial College 2024 Haqqathon</h3>
+          <h3>Imperial College 2024 Hackathon</h3>
           <p class="participants">120+ participants • 24 hours</p>
           <h4>Notable Outcomes:</h4>
           <ul>
@@ -980,11 +805,11 @@
           </ul>
         </div>
 
-      </div> <!-- End Haqqathon Events -->
+      </div> <!-- End Hackathon Events -->
 
       <div class="haqqathon-link a">
         <a href="https://www.haqqathons.com" target="_blank" rel="noopener noreferrer">
-          Find a Haqqathon near you
+          Find a Hackathon near you
         </a>
       </div>
 
@@ -1065,7 +890,7 @@
     <!-- Brand -->
     <div class="footer-col brand-col" data-reveal="fade-up" data-reveal-delay="0">
       <img src="blue-logo-IHSAAN.webp" alt="IHSAAN Logo" class="footer-logo">
-      <div class="ihsaan-slogan">Excellence in Everything</div>
+      <div class="ihsaan-slogan">Elevating Faith-Driven Talent</div>
       <small class="foot-silver">&copy; <span id="year"></span> IHSAAN</small>
     </div>
 
@@ -1075,7 +900,7 @@
       <a href="#career-conferences" data-route="career-conferences">Career Conferences</a>
       <a href="#faithful-talent" data-route="faithful-talent">Faithful Talent</a>
       <a href="#opportunities-tracker" data-route="opportunities-tracker">Opportunities Tracker</a>
-      <a href="#haqqathons" data-route="haqqathons">Haqqathons</a>
+      <a href="#haqqathons" data-route="haqqathons">Hackathons</a>
       <a href="#career-guides" data-route="career-guides">Career Guides</a>
       <a href="https://mymuslimmentor.com/" target="_blank" rel="noopener">My Muslim Mentor</a>
     </div>
