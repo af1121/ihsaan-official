@@ -132,6 +132,53 @@ function initHeroParallax() {
   });
 }
 
+function initHeroVideoPlayback() {
+  const video = document.querySelector(".hero-video");
+  if (!video) return;
+
+  video.muted = true;
+  video.defaultMuted = true;
+  video.loop = true;
+  video.autoplay = true;
+  video.playsInline = true;
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
+  video.setAttribute("webkit-playsinline", "");
+
+  video.querySelectorAll("source").forEach(source => {
+    if (!source.src && source.dataset.src) source.src = source.dataset.src;
+  });
+
+  const tryPlay = () => {
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {
+        video.classList.add("is-autoplay-blocked");
+      });
+    }
+  };
+
+  if (video.readyState >= 2) {
+    tryPlay();
+  } else {
+    video.load();
+    video.addEventListener("canplay", tryPlay, { once: true });
+  }
+
+  const unlockPlayback = () => {
+    video.classList.remove("is-autoplay-blocked");
+    tryPlay();
+  };
+
+  ["touchstart", "pointerdown", "click", "scroll"].forEach(eventName => {
+    window.addEventListener(eventName, unlockPlayback, { once: true, passive: true });
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) tryPlay();
+  });
+}
+
 function initMissionLayerReveal() {
   const missionSection = document.querySelector(".mission-split");
   if (!missionSection) return;
@@ -480,15 +527,7 @@ function initCounterObserver(){
 
 // Init
 window.addEventListener("load", () => {
-  // Load hero video after page is ready
-  const video = document.querySelector(".hero-video");
-  if (video) {
-    video.querySelectorAll("source").forEach(s => {
-      if (s.dataset.src) s.src = s.dataset.src;
-    });
-    video.load();
-  }
-
+  initHeroVideoPlayback();
   initNavScroll();
   initHeroParallax();
   initMissionLayerReveal();
