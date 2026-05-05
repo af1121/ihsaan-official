@@ -3955,7 +3955,7 @@ filter:
     ══════════════════════════════════════════ */
     .features-section {
       background: #fff;
-      padding: 0 0 80px;
+      padding: 0;
     }
     .features-heading {
       text-align: center;
