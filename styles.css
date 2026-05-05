@@ -4124,6 +4124,24 @@ filter:
       color: var(--pale);
       margin-top: 2px;
     }
+
+    @media (max-width: 600px) {
+  .features-section {
+    padding: 0;
+  }
+  .events-section {
+    padding: 0 0 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-row:last-child {
+    margin-bottom: 0;
+  }
+  .haq-card:last-of-type {
+    margin-bottom: 0;
+  }
+}
  
     /* ══════════════════════════════════════════
        PAST EVENTS TIMELINE
