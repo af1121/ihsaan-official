@@ -4142,6 +4142,20 @@ filter:
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 820px) {
+  .feature-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-row .feature-text {
+    order: 1;
+  }
+  .feature-row img {
+    order: 2;
+    min-height: 260px;
+  }
+}
  
     /* ══════════════════════════════════════════
        PAST EVENTS TIMELINE
