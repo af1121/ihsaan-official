@@ -3352,10 +3352,10 @@ filter:
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 40px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 /* Columns */
