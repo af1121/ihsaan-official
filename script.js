@@ -525,6 +525,27 @@ function initCounterObserver(){
 //   requestAnimationFrame(step);
 // }
 
+const srEls = document.querySelectorAll('[data-sr]');
+const timelineEls = document.querySelectorAll('.timeline-item');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+srEls.forEach(el => io.observe(el));
+timelineEls.forEach(el => io.observe(el));
+
+setTimeout(() => {
+  srEls.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
+  });
+}, 100);
+
 // Init
 window.addEventListener("load", () => {
   initHeroVideoPlayback();
