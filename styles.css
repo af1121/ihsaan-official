@@ -679,13 +679,13 @@ img{ max-width:100%; display:block; }
 }
 
 /* Hero CTA entrance */
-@keyframes heroCtaIn { to { opacity: 1; transform: translateY(0); } }
+/* @keyframes heroCtaIn { to { opacity: 1; transform: translateY(0); } }
 
 /* Particles canvas */
-.hero-particles { position: absolute; inset: 0; z-index: 1; pointer-events: none; width: 100%; height: 100%; }
+/* .hero-particles { position: absolute; inset: 0; z-index: 1; pointer-events: none; width: 100%; height: 100%; } */
 
 /* Scroll indicator */
-.scroll-indicator { position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); z-index: 3; animation: scrollFadeIn 1s 2s var(--ease-out-expo) both; }
+/* .scroll-indicator { position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); z-index: 3; animation: scrollFadeIn 1s 2s var(--ease-out-expo) both; }
 .hero-arrow {
   width: 94px;
   height: 60px;
@@ -767,7 +767,7 @@ img{ max-width:100%; display:block; }
   opacity: 0;
   transform: scaleX(0.82);
   transition: opacity 0.28s ease, transform 0.28s ease;
-} */
+}  */
 /* .hero-cta::after {
   content: "";
   position: absolute;
