@@ -4046,7 +4046,7 @@ img{ max-width:100%; display:block; }
 } */
 
 /* Final CTA */
-.final-cta{
+/* .final-cta{
   background: #0A3463;
   color:#fff;
   padding: 70px 0;
@@ -4095,10 +4095,10 @@ img{ max-width:100%; display:block; }
   background: rgba(7,26,67,.88);
   border-color: rgba(255,255,255,.14);
 }
-.email{ margin-top:14px; color: var(--silver); }
+.email{ margin-top:14px; color: var(--silver); } */
 
 /* Inner pages */
-.page-head{
+/* .page-head{
   padding:80px 0 50px;
   background:
     radial-gradient(ellipse at 20% 50%, rgba(74,158,255,0.15) 0%, transparent 50%),
@@ -4157,10 +4157,10 @@ img{ max-width:100%; display:block; }
   border-radius: 6px;
   max-width: 230px;
   width: fit-content;
-}
+} */
 
 /* Footer */
-.footer {
+/* .footer {
   padding: 42px 0 34px;
   background:
     radial-gradient(ellipse at 18% 18%, rgba(143,208,255,.16), transparent 34%),
@@ -4186,27 +4186,27 @@ img{ max-width:100%; display:block; }
   gap: 40px;
   justify-content: space-between;
   align-items: start;
-}
+} */
 
 /* Columns */
-.footer-col {
+/* .footer-col {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} */
 
 /* Headings */
-.footer-heading {
+/* .footer-heading {
   font-size: 14px;
   font-weight: 900;
   letter-spacing: .06em;
   text-transform: uppercase;
   color: #8fd0ff;
   margin-bottom: 8px;
-}
+} */
 
 /* Links */
-.footer-col a {
+/* .footer-col a {
   font-size: 14.5px;
   color: rgba(255,255,255,.76);
   transition: color .2s ease;
@@ -4227,10 +4227,10 @@ img{ max-width:100%; display:block; }
 .footer-col a:hover {
   color: #ffffff;
 }
-.footer-col a:hover::after { width: 100%; }
+.footer-col a:hover::after { width: 100%; } */
 
 /* Brand column tweaks */
-.brand-col {
+/* .brand-col {
   gap: 6px;
   align-items: flex-start;
   text-align: left;
@@ -4241,18 +4241,18 @@ img{ max-width:100%; display:block; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 /* Left section */
-.footer-left {
+/* .footer-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-}
+} */
 
 /* Right section */
-.footer-right {
+/* .footer-right {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -4353,7 +4353,7 @@ img{ max-width:100%; display:block; }
   #page-home .events-grid {
     gap: 56px;
   }
-}
+} */
 
 /* Responsive */
 @media(max-width:1100px){
