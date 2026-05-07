@@ -1,0 +1,84 @@
+.prog-card[data-route="career-conferences"] .img {
+  background: url('images/career-conferences.webp') center/cover no-repeat;
+}
+
+.prog-card[data-route="faithful-talent"] .img {
+  background: url('images/faithful_talent.webp') center/cover no-repeat;
+}
+
+.prog-card[data-route="opportunities-tracker"] .img {
+  background: url('images/oppTracker.webp') center/cover no-repeat;
+}
+
+.prog-card[data-route="haqqathons"] .img {
+  background: url('images/Haqqathons.webp') center/cover no-repeat;
+}
+
+.prog-card[data-route="career-guides"] .img {
+  background: url('images/career-guides.webp') center/cover no-repeat;
+}
+.prog-card[data-route="my-muslim-mentor"] .img {
+  /* You didn't show this file in your screenshot list, so check the filename! */
+  background: url('images/mmm.webp') center/cover no-repeat;
+}
+
+@media (max-width: 900px) {
+    /* --- Programme cards --- */
+  .prog-card { flex: 0 0 220px; height: 280px; }
+}
+
+@media (max-width: 600) {
+.programmes-section { padding-top: 20px; }
+  .scroller { gap: 10px; padding: 16px 0 8px; }
+  .prog-card {
+    flex: 0 0 calc(50% - 5px);
+    height: 200px;
+  }
+  .prog-card .label { font-size: 13px; margin-bottom: 6px; }
+}
+
+@media (max-width: 900px) {
+  #page-home .programmes-section .scroller,
+  .programmes-section .scroller {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .programmes-section .prog-card {
+    flex: none;
+    height: 340px;
+  }
+}
+
+@media (max-width: 600px) {
+  .programmes-section {
+    padding: 62px 0 14px;
+  }
+  #page-home .programmes-section .scroller,
+  .programmes-section .scroller {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-top: 18px;
+  }
+  .programmes-section .prog-card {
+    flex: none;
+    height: 320px;
+  }
+  .programmes-section .prog-card .label {
+    position: static;
+    font-size: 23px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .programmes-section .prog-card .card-content {
+    padding: 0 24px 26px;
+    min-height: 166px;
+  }
+  .programmes-section .prog-card .resource-num {
+    min-height: 42px;
+    min-width: 54px;
+    font-size: 17px;
+  }
+  .programmes-subtitle {
+    margin-bottom: 24px;
+  }
+}
+

@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+.events-copy,
+.events-heading,
+.events-text {
+  text-align: left;
+}
+.events-text {
+  margin: 0 0 16px;
+}
+.events-section { padding: 44px 0; }
+  .events-heading { font-size: clamp(32px, 8vw, 48px); }
+  .events-text { font-size: 15px; line-height: 1.65; margin: 0 auto 16px; }
+  .events-btn { width: 100%; text-align: center; padding: 14px; }
+  .events-card-sub { font-size: 13.5px; }
+}
+
+.events-img-wrap iframe {
+    width: 100%;
+    height: clamp(300px, 26vw, 340px);
+    aspect-ratio: auto;
+    border: 1px solid rgba(255,255,255,.22) !important;
+    border-radius: 6px;
+    display: block;
+}
+
+@media (max-width: 400px) {
+    .events-heading { font-size: 28px; }
+}

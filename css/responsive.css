@@ -1,0 +1,264 @@
+@media (max-width: 700px) {
+  #page-home [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #page-home [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ========================================================
+   MOBILE OPTIMISATIONS — TABLET (≤900px)
+   ======================================================== */
+@media (max-width: 900px) {
+
+  /* --- Hero --- */
+  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 104px 20px 92px; }
+  .hero-shell { width: min(760px, calc(100% - 8px)); }
+  .hero-content { width: 100%; margin: 0; padding: 0; }
+  .hero h1 { font-size: clamp(38px, 8.5vw, 62px); margin-bottom: 18px; white-space: normal; }
+  .hero-intro { font-size: 16px; margin: 0 0 26px; max-width: 50ch; }
+  .hero-logo { height: 34px; }
+  .hero-actions { justify-content: flex-start; }
+  .hero-cta { width: auto; min-width: 235px; padding: 17px 24px; font-size: 17px; }
+  .scroll-indicator { bottom: 34px; }
+
+  /* --- Mission --- */
+  .mission-text { font-size: 15.5px; max-width: 58ch; }
+  .mission-panel { padding: 22px 18px; }
+
+  /* --- Programme cards --- */
+  /* .prog-card { flex: 0 0 220px; height: 280px; } */
+
+  /* --- Events --- */
+  .events-heading { font-size: clamp(36px, 6vw, 56px); }
+  .events-text { font-size: 16px; }
+
+  /* --- Brand carousel --- */
+  .brand-tile { min-width: 200px; height: 85px; }
+  .brand-tile img { max-height: 44px; }
+
+  /* --- Page head --- */
+  .page-head h1 { font-size: clamp(26px, 5vw, 40px); }
+  .page-body { padding: 36px 0 60px; }
+
+  /* --- Cards --- */
+  .card { padding: 26px 22px; }
+
+  /* --- Donate --- */
+  .container-donate-inner { gap: 30px; }
+  .donate-text { font-size: 19px; text-align: center; }
+}
+
+/* ========================================================
+   MOBILE OPTIMISATIONS — PHONE (≤600px)
+   ======================================================== */
+@media (max-width: 600px) {
+
+  /* --- Base --- */
+  :root { --container: min(1120px, 88%); }
+  /* .section { padding: 50px 0; } */
+  /* .h2 { font-size: clamp(20px, 5vw, 28px); } */
+  /* .darkp { font-size: 15px; line-height: 1.75; }
+  .white-muted { font-size: 15px; } */
+
+  /* --- Nav --- */
+  /* .nav-inner { padding: 12px 16px; }
+  .brand-logo { height: 26px; }
+  .burger { width: 36px; height: 36px; background: transparent; border: 0; border-radius: 0; } */
+
+  /* --- Mobile drawer --- */
+  /* .mobile-drawer { padding: 100px 20px 30px; }
+  .mobile-drawer a {
+    padding: 14px 16px;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .mobile-accordion {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+  .mobile-sub a {
+    padding: 12px 14px;
+    font-size: 14px;
+  } */
+
+  /* --- Hero --- */
+  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 96px 16px 98px; align-items: center; }
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(3, 11, 27, 0.80) 0%, rgba(6, 26, 55, 0.56) 56%, rgba(0,0,0,0.28) 100%),
+      linear-gradient(180deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.10) 38%, rgba(0,0,0,0.66) 100%);
+  }
+  .hero-shell { width: 100%; padding-left: 12px; }
+  .hero-content { width: 100%; margin: 0; padding: 0; text-align: left; border-radius: 0; }
+  .hero h1 { font-size: clamp(34px, 11vw, 48px); line-height: 1.18; margin-bottom: 16px; white-space: normal; max-width: 11ch; }
+  .hero-intro { font-size: 13px; margin: 0 0 22px; max-width: 34ch; line-height: 1.58; }
+  .hero-logo { height: 28px; top: 12%; }
+  .hero-sub { font-size: 12px; margin-top: 16px; justify-content: center; }
+  .hero-actions { align-items: stretch; gap: 10px; }
+  .hero-cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-secondary { width: 100%; min-height: 54px; padding: 15px 20px; font-size: 15px; }
+  .scroll-indicator { bottom: 30px; }
+  .scroll-mouse { width: 20px; height: 32px; }
+
+  /* --- Mission --- */
+  .slab { padding: 40px 0; }
+  .mission-text { font-size: 14.5px; line-height: 1.75; max-width: none; }
+  .mission-panel { padding: 20px 16px; border-radius: 12px; }
+  .mission-divider { width: 80px; }
+
+  /* --- Programme cards --- */
+  /* .programmes-section { padding-top: 20px; }
+  .scroller { gap: 10px; padding: 16px 0 8px; }
+  .prog-card {
+    flex: 0 0 calc(50% - 5px);
+    height: 200px;
+  }
+  .prog-card .label { font-size: 13px; margin-bottom: 6px; } */
+
+
+  /* --- Impact --- */
+  .impact-section { padding: 60px 10px; }
+  .impact-title { font-size: clamp(22px, 5.5vw, 34px); margin-bottom: 14px; }
+  .stat .num, .num { font-size: 42px !important; }
+  .stat .cap, .cap { font-size: 11px !important; padding: 6px 14px !important; }
+  .stat .sub, .sub { font-size: 13px; max-width: 28ch; }
+  .stats { gap: 24px; }
+
+  /* --- Values --- */
+  .values-section { padding: 50px 0; }
+  .values-sub { font-size: 15px; }
+  .values-icons { gap: 24px 20px; }
+  .value-icon { max-width: 280px; }
+  .value-icon-media { width: 180px; height: 130px; }
+  .value-icon img { max-width: 160px; max-height: 120px; }
+  .v-title { font-size: 16px; }
+  .v-sub { font-size: 12px; }
+
+  /* --- Events --- */
+  /* .events-section { padding: 44px 0; }
+  .events-heading { font-size: clamp(32px, 8vw, 48px); }
+  .events-text { font-size: 15px; line-height: 1.65; margin: 0 auto 16px; }
+  .events-btn { width: 100%; text-align: center; padding: 14px; }
+  .events-card-sub { font-size: 13.5px; } */
+
+  /* --- Brand carousel --- */
+  .worked-with {
+    padding: 0 0 18px;
+    background: #ffffff;
+  }
+  #page-home .worked-with .center {
+    padding: 28px calc(50vw - 50%) 24px;
+  }
+  .worked-title {
+    font-size: clamp(24px, 3vw, 38px);
+    margin-bottom: 12px;
+  }
+  .brand-carousel { border-radius: 0; padding: 8px 0; display: block; }
+  .brand-track { padding: 10px 18px; gap: 28px; justify-content: initial; }
+  .brand-tile { min-width: 140px; height: 68px; border-radius: 0; }
+  .brand-tile img { max-height: 36px; }
+  .brand-carousel-reverse { margin-top: 10px; }
+
+  .contact-section { padding: 54px 0; }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-copy { padding-top: 0; }
+  .contact-submit {
+    width: 100%;
+  }
+
+  /* --- Footer --- */
+  .footer { padding: 40px 0 24px; }
+  .footer .container {
+    width: min(1320px, calc(100% - 48px));
+  }
+  .footer-grid { gap: 24px; }
+  .footer-col { text-align: left; }
+  .footer-col a { font-size: 14px; }
+  .footer-heading { font-size: 12px; }
+  .footer-logo { margin: 0; height: 23px; }
+  .ihsaan-slogan { text-align: left; font-size: 12px; line-height: 1.25; }
+  .foot-silver { text-align: left; display: block; font-size: 11px; }
+
+  /* --- Page heads (programme pages) --- */
+  .page-head { padding: 60px 0 40px; }
+  .page-head h1 { font-size: clamp(22px, 6vw, 34px); }
+  .page-head .white-muted { font-size: 14px; }
+  .page-body { padding: 28px 0 50px; }
+
+  /* --- Cards (programme pages) --- */
+  .card { padding: 22px 18px; border-radius: 14px; }
+  .card .darkp ul { padding-left: 16px; }
+
+  /* --- Mini stats --- */
+  .mini-stats { gap: 10px; }
+  .mini-stat { min-width: 90px; padding: 12px 14px; border-radius: 10px; }
+  .mini-num { font-size: 22px; }
+  .mini-label { font-size: 11.5px; }
+
+  /* --- Meet the Team --- */
+  .team-grid { gap: 16px; }
+  .team-card { padding: 22px 14px; }
+  .team-photo { width: 70px; height: 70px; margin-bottom: 12px; }
+  .team-name { font-size: 15px; }
+  .team-role { font-size: 13px; }
+
+  /* --- Donate --- */
+  .donate-strip { padding: 24px 0; }
+  .container-donate-inner { gap: 20px; flex-direction: column; text-align: center; }
+  .donate-text { font-size: 18px; }
+  .donate-btn { width: 100%; text-align: center; padding: 14px 18px; }
+
+  /* --- Haqqathon cards --- */
+  .haqqathon-events { padding-left: 20px; }
+  .haqqathon-card { padding: 20px 16px; }
+  .haqqathon-card ul li { font-size: 14px; }
+}
+
+/* ========================================================
+   MOBILE OPTIMISATIONS — SMALL PHONE (≤400px)
+   ======================================================== */
+@media (max-width: 400px) {
+  /* :root { --container: min(1120px, 92%); } */
+
+  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding-bottom: 92px; }
+  .hero h1 { font-size: clamp(32px, 10vw, 42px); }
+  .hero-logo { height: 24px; }
+  .hero-cta { font-size: 15px; padding: 14px 16px; }
+
+  .prog-card { flex: 0 0 100%; height: 180px; }
+  .prog-card .label { font-size: 14px; }
+
+  .stat .num, .num { font-size: 34px !important; }
+  .impact-title { font-size: 20px; }
+
+  /* .events-heading { font-size: 28px; } */
+
+  .brand-tile { min-width: 130px; height: 60px; }
+  .brand-tile img { max-height: 30px; }
+
+  .page-head { padding: 50px 0 30px; }
+  .page-head h1 { font-size: 20px; }
+  .card { padding: 18px 14px; }
+  .mini-num { font-size: 20px; }
+
+  .team-grid { grid-template-columns: 1fr; }
+}

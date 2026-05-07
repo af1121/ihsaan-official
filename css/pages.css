@@ -1,2 +1,111 @@
 /* inner pages, footer, responsive */
 
+/* ---------- MEET THE TEAM ---------- */
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media(max-width:900px){
+  .team-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width:540px){
+  .team-grid{ grid-template-columns: 1fr; }
+}
+
+.team-card{
+  text-align: center;
+  padding: 28px 18px;
+  border-radius: 16px;
+  background: #f4f7fb;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.team-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.08);
+}
+
+.team-photo{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--navMid), var(--navBright));
+  opacity: .35;
+}
+
+.team-name{
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--navDark);
+  margin-bottom: 4px;
+}
+
+.team-role{
+  font-size: 14px;
+  color: #556a99;
+  margin-bottom: 10px;
+}
+
+.team-linkedin{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--navBright);
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+.team-linkedin:hover{
+  transform: scale(1.12);
+}
+
+/* ---------- MINI STATS (inline stats grid) ---------- */
+.mini-stats{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.mini-stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #eef4ff, #f0f6ff);
+  transition: transform 0.2s ease;
+}
+.mini-stat:hover{
+  transform: translateY(-3px);
+}
+
+.mini-num{
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--navDark);
+  line-height: 1.1;
+}
+
+.mini-label{
+  font-size: 13px;
+  color: #556a99;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* ---------- HERO CTA ALT (outline variant) ---------- */
+.hero-cta-alt{
+  background: transparent !important;
+  border: 2px solid rgba(255,255,255,.6);
+  box-shadow: none;
+}
+.hero-cta-alt:hover{
+  background: rgba(255,255,255,.12) !important;
+  border-color: #fff;
+}

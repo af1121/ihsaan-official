@@ -11,6 +11,10 @@
   border-bottom: 1px solid rgba(16,43,104,.08);
   overflow: clip;
 }
+.story-section {
+  padding-top: clamp(42px, 5vw, 52px);
+  padding-bottom: clamp(48px, 5vw, 58px);
+}
 .story-inner{
   position: relative;
   z-index: 1;
@@ -251,6 +255,22 @@
     max-width: 620px;
     padding-top: 0;
   }
+}
+@media (max-width: 900px) {
+  .story-section {
+    padding-top: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-section {
+    padding-top: 34px;
+    padding-bottom: 58px;
+  }
+}
+#page-home .container,
+.story-inner {
+  width: var(--container-wide);
 }
 .story-evidence-list li::before{
   content: "";
@@ -758,6 +778,7 @@
 }
 
 
+
 .solution-section{
   position: relative;
   overflow: hidden;
@@ -770,6 +791,34 @@
   color: #ffffff;
   isolation: isolate;
 }
+
+@media (max-width: 700px) {
+    .solution-section{
+    padding: 52px 0 58px;
+  }
+  .solution-section .story-bridge{
+    font-size: 16px;
+    line-height: 1.68;
+    margin-bottom: 14px;
+  }
+  .solution-section .story-youth-pivot{
+    margin-bottom: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .solution-section .youth-stat-intro{
+    font-size: 15px;
+  }
+  .solution-inner h2{
+    font-size: clamp(24px, 3vw, 38px);
+    max-width: 12ch;
+  }
+  .solution-purpose-copy h2{
+    font-size: clamp(24px, 3vw, 38px);
+    max-width: none;
+  }
+}
+
 .solution-section::before{
   content: "";
   position: absolute;
@@ -953,6 +1002,37 @@
     linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.86)),
     #ffffff;
   box-shadow: 0 22px 58px rgba(0,0,0,.22);
+}
+@media (max-width: 600px) {
+  .story-research-card {
+    padding: 22px 20px 24px;
+  }
+  .story-quote-lead {
+    font-size: 11px;
+    line-height: 1.55;
+    letter-spacing: .035em;
+  }
+  .story-research-card blockquote {
+    font-size: 17px;
+    line-height: 1.48;
+    letter-spacing: 0;
+  }
+
+  .youth-age {
+    min-width: 0;
+    grid-template-rows: 46px minmax(28px, auto);
+    align-items: start;
+  }
+  .youth-label {
+    max-width: 100%;
+    min-height: 28px;
+    padding: 6px 7px;
+    font-size: 8px;
+    line-height: 1.16;
+    letter-spacing: .015em;
+    text-align: center;
+    white-space: normal;
+  }
 }
 .solution-section .story-quote-lead{
   color: #52617c !important;
@@ -1942,6 +2022,30 @@
   gap:14px;
 }
 
+.impact-section {
+  position: relative;
+  background-image: url('ImpactNoDB.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  /* Ensure no other background color overrides it */
+  background-color: transparent !important; 
+}
+
+.impact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* Adjust darkness here */
+  z-index: 1;
+}
+
+.impact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 /* .stat:hover{ transform: translateY(-3px); filter: brightness(1.03); box-shadow: var(--glow), 0 18px 40px rgba(0,0,0,.18); } */
 .cap{
   display:inline-block;
@@ -1975,6 +2079,116 @@
   transform: scale(1.15); /* slight enlargement */
   background-color: rgba(15, 63, 133, 0.85); /* dark blue highlight */
   box-shadow: 0 8px 24px rgba(0,0,0,0.2), 0 0 12px rgba(15,168,255,0.45); /* subtle glow */
+}
+
+.stat {
+  background: transparent !important; /* Forces transparency */
+  border: none !important;            /* Removes border */
+  box-shadow: none !important;        /* Removes shadow */
+  backdrop-filter: none !important;   /* Removes blur */
+  padding: 0 !important;              /* Removes padding inside box */
+}
+
+/* 5. Style the Blue Labels ("Event Attendees") */
+.stat .cap {
+  background-color: #0f3f85 !important; /* Solid blue */
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important; /* Sharp corners */
+  padding: 10px 20px !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* 6. Style the Numbers */
+.stat .num {
+  font-size: 80px; /* Make them HUGE */
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1;
+}
+
+/* 7. Style the Subtext */
+.stat .sub {
+  font-size: 18px;
+  color: #e2e8f0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.donate-strip {
+  background: linear-gradient(135deg, #ffffff, #f0f5ff, #e8f0ff, #ffffff);
+  background-size: 300% 300%;
+  animation: donateGradient 8s ease infinite;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(16,43,104,.10);
+  border-bottom: 1px solid rgba(16,43,104,.10);
+}
+
+@media (max-width: 600px) {
+  .donate-strip {
+    padding: 24px 16px;
+  }
+}
+
+@keyframes donateGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.container-donate-inner {
+  display:flex;
+  align-items:center;
+  justify-content:center; 
+  gap:72px;               
+  flex-wrap:wrap;         
+}
+
+.donate-text{
+  margin:0;
+  font-size: 22px;
+  font-weight:900;
+  letter-spacing:-.01em;
+  line-height: 1.4;
+  background: linear-gradient(90deg, var(--navMid), var(--navBright));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.donate-btn{
+  padding: 14px 22px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--navDark), var(--navMid), var(--navBright));
+  color: #ffffff;
+  box-shadow: 0 14px 34px rgba(7,26,67,.18);
+  border: 1px solid rgba(255,255,255,.16);
+  font-weight:900;
+  text-transform:uppercase;
+  max-width: 100%;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .container-donate-inner {
+    padding: 0 16px;
+  }
+}
+
+.donate-btn{
+  animation: donatePulse 2s ease-in-out infinite;
+}
+@keyframes donatePulse {
+  0%, 100% { box-shadow: 0 14px 34px rgba(7,26,67,0.18); }
+  50% { box-shadow: 0 14px 34px rgba(7,26,67,0.18), 0 0 20px rgba(74,158,255,0.25); }
+}
+.donate-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--glow), 0 18px 40px rgba(0,0,0,.18);
 }
 
 

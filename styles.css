@@ -52,7 +52,7 @@
 } */
 
 /* === SCROLL REVEAL SYSTEM === */
-[data-reveal] {
+/* [data-reveal] {
   opacity: 0;
   transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
@@ -84,7 +84,7 @@ body{
 }
 a{ color:inherit; text-decoration:none; }
 img{ max-width:100%; display:block; }
-.container{ width:var(--container); margin:0 auto; }
+.container{ width:var(--container); margin:0 auto; } */
 /* #page-home .container{ width:var(--container-wide); } */
 /* .section{ padding:70px 0; } */
 /* .center{ text-align:center; } */
@@ -103,7 +103,7 @@ img{ max-width:100%; display:block; }
 } */
 
 /* ===== Site Loader ===== */
-.site-loader {
+/* .site-loader {
   position: fixed;
   inset: 0;
   background: linear-gradient(180deg, #071a43, #0B235A);
@@ -168,7 +168,7 @@ img{ max-width:100%; display:block; }
 }
 @keyframes loaderFill {
   to { width: 100%; }
-}
+} */
 
 /* TOP NAV
 .topbar{
@@ -4394,15 +4394,15 @@ img{ max-width:100%; display:block; }
   .hero-logo{ height:40px; top:14%; }
 }
 
-.events-img-wrap iframe {
+/* .events-img-wrap iframe {
     width: 100%;
     height: clamp(300px, 26vw, 340px);
     aspect-ratio: auto;
     border: 1px solid rgba(255,255,255,.22) !important;
     border-radius: 6px;
     display: block;
-}
-.prog-card[data-route="career-conferences"] .img {
+} */
+/* .prog-card[data-route="career-conferences"] .img {
   background: url('images/career-conferences.webp') center/cover no-repeat;
 }
 
@@ -4423,77 +4423,77 @@ img{ max-width:100%; display:block; }
 }
 .prog-card[data-route="my-muslim-mentor"] .img {
   /* You didn't show this file in your screenshot list, so check the filename! */
-  background: url('images/mmm.webp') center/cover no-repeat;
-}
+  /* background: url('images/mmm.webp') center/cover no-repeat;
+}  */
 
 /* --- IMPACT SECTION FIX --- */
 
 /* 1. Make the SECTION handle the background image, not a div inside it */
-.impact-section {
+/* .impact-section {
   position: relative;
   background-image: url('ImpactNoDB.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 0;
-  /* Ensure no other background color overrides it */
+  Ensure no other background color overrides it
   background-color: transparent !important; 
-}
+} */
 
 /* 2. Add the dark overlay so white text is readable */
-.impact-section::before {
+/* .impact-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7); /* Adjust darkness here */
+  background: rgba(0, 0, 0, 0.7); 
   z-index: 1;
-}
+} */
 
 /* 3. Bring content above the overlay */
-.impact-section .container {
+/* .impact-section .container {
   position: relative;
   z-index: 2;
-}
+} */
 
 /* 4. REMOVE THE BOXES around the stats */
-.stat {
-  background: transparent !important; /* Forces transparency */
-  border: none !important;            /* Removes border */
-  box-shadow: none !important;        /* Removes shadow */
-  backdrop-filter: none !important;   /* Removes blur */
-  padding: 0 !important;              /* Removes padding inside box */
-}
+/* .stat {
+  background: transparent !important; 
+  border: none !important;          
+  box-shadow: none !important;     
+  backdrop-filter: none !important;   
+  padding: 0 !important;              
+} */
 
 /* 5. Style the Blue Labels ("Event Attendees") */
-.stat .cap {
-  background-color: #0f3f85 !important; /* Solid blue */
+/* .stat .cap {
+  background-color: #0f3f85 !important; 
   color: #ffffff !important;
   border: none !important;
-  border-radius: 0 !important; /* Sharp corners */
+  border-radius: 0 !important;
   padding: 10px 20px !important;
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 15px;
-}
+} */
 
 /* 6. Style the Numbers */
-.stat .num {
-  font-size: 80px; /* Make them HUGE */
+/* .stat .num {
+  font-size: 80px; 
   font-weight: 800;
   color: #ffffff;
   margin: 0;
   line-height: 1;
-}
+} */
 
 /* 7. Style the Subtext */
-.stat .sub {
+/* .stat .sub {
   font-size: 18px;
   color: #e2e8f0;
   margin-top: 10px;
   font-weight: 500;
-}
+} */
 
-.donate-strip {
+/* .donate-strip {
   background: linear-gradient(135deg, #ffffff, #f0f5ff, #e8f0ff, #ffffff);
   background-size: 300% 300%;
   animation: donateGradient 8s ease infinite;
@@ -4506,9 +4506,9 @@ img{ max-width:100%; display:block; }
   .donate-strip {
     padding: 24px 16px;
   }
-}
+} */
 
-@keyframes donateGradient {
+/* @keyframes donateGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -4521,9 +4521,9 @@ img{ max-width:100%; display:block; }
   justify-content:center; 
   gap:72px;               
   flex-wrap:wrap;         
-}
+} */
 
-.donate-text{
+/* .donate-text{
   margin:0;
   font-size: 22px;
   font-weight:900;
@@ -4564,7 +4564,7 @@ img{ max-width:100%; display:block; }
 .donate-btn:hover{
   transform: translateY(-2px);
   box-shadow: var(--glow), 0 18px 40px rgba(0,0,0,.18);
-}
+} */
 
     /* ══════════════════════════════════════════
        HACKATHONS
@@ -5433,7 +5433,7 @@ img{ max-width:100%; display:block; }
     } */
 
 /* ---------- HERO CTA ALT (outline variant) ---------- */
-.hero-cta-alt{
+/* .hero-cta-alt{
   background: transparent !important;
   border: 2px solid rgba(255,255,255,.6);
   box-shadow: none;
@@ -5441,10 +5441,10 @@ img{ max-width:100%; display:block; }
 .hero-cta-alt:hover{
   background: rgba(255,255,255,.12) !important;
   border-color: #fff;
-}
+} */
 
 /* ---------- MEET THE TEAM ---------- */
-.team-grid{
+/* .team-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
@@ -5503,10 +5503,10 @@ img{ max-width:100%; display:block; }
 }
 .team-linkedin:hover{
   transform: scale(1.12);
-}
+} */
 
 /* ---------- MINI STATS (inline stats grid) ---------- */
-.mini-stats{
+/* .mini-stats{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -5540,15 +5540,15 @@ img{ max-width:100%; display:block; }
   color: #556a99;
   margin-top: 4px;
   text-align: center;
-}
+} */
 
 /* ========================================================
    MOBILE OPTIMISATIONS — TABLET (≤900px)
    ======================================================== */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) { */
 
   /* --- Hero --- */
-  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 104px 20px 92px; }
+  /* .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 104px 20px 92px; }
   .hero-shell { width: min(760px, calc(100% - 8px)); }
   .hero-content { width: 100%; margin: 0; padding: 0; }
   .hero h1 { font-size: clamp(38px, 8.5vw, 62px); margin-bottom: 18px; white-space: normal; }
@@ -5556,42 +5556,42 @@ img{ max-width:100%; display:block; }
   .hero-logo { height: 34px; }
   .hero-actions { justify-content: flex-start; }
   .hero-cta { width: auto; min-width: 235px; padding: 17px 24px; font-size: 17px; }
-  .scroll-indicator { bottom: 34px; }
+  .scroll-indicator { bottom: 34px; } */
 
   /* --- Mission --- */
-  .mission-text { font-size: 15.5px; max-width: 58ch; }
-  .mission-panel { padding: 22px 18px; }
+  /* .mission-text { font-size: 15.5px; max-width: 58ch; }
+  .mission-panel { padding: 22px 18px; } */
 
   /* --- Programme cards --- */
-  .prog-card { flex: 0 0 220px; height: 280px; }
+  /* .prog-card { flex: 0 0 220px; height: 280px; } */
 
   /* --- Events --- */
-  .events-heading { font-size: clamp(36px, 6vw, 56px); }
-  .events-text { font-size: 16px; }
+  /* .events-heading { font-size: clamp(36px, 6vw, 56px); }
+  .events-text { font-size: 16px; } */
 
   /* --- Brand carousel --- */
-  .brand-tile { min-width: 200px; height: 85px; }
-  .brand-tile img { max-height: 44px; }
+  /* .brand-tile { min-width: 200px; height: 85px; }
+  .brand-tile img { max-height: 44px; } */
 
   /* --- Page head --- */
-  .page-head h1 { font-size: clamp(26px, 5vw, 40px); }
-  .page-body { padding: 36px 0 60px; }
+  /* .page-head h1 { font-size: clamp(26px, 5vw, 40px); }
+  .page-body { padding: 36px 0 60px; } */
 
   /* --- Cards --- */
-  .card { padding: 26px 22px; }
+  /* .card { padding: 26px 22px; } */
 
   /* --- Donate --- */
-  .container-donate-inner { gap: 30px; }
+  /* .container-donate-inner { gap: 30px; }
   .donate-text { font-size: 19px; text-align: center; }
-}
+} */
 
 /* ========================================================
    MOBILE OPTIMISATIONS — PHONE (≤600px)
    ======================================================== */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) { */
 
   /* --- Base --- */
-  :root { --container: min(1120px, 88%); }
+  /* :root { --container: min(1120px, 88%); } */
   /* .section { padding: 50px 0; } */
   /* .h2 { font-size: clamp(20px, 5vw, 28px); } */
   /* .darkp { font-size: 15px; line-height: 1.75; }
@@ -5619,7 +5619,7 @@ img{ max-width:100%; display:block; }
   } */
 
   /* --- Hero --- */
-  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 96px 16px 98px; align-items: center; }
+  /* .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 96px 16px 98px; align-items: center; }
   .hero-overlay {
     background:
       linear-gradient(90deg, rgba(3, 11, 27, 0.80) 0%, rgba(6, 26, 55, 0.56) 56%, rgba(0,0,0,0.28) 100%),
@@ -5639,54 +5639,54 @@ img{ max-width:100%; display:block; }
     font-size: 16px;
     justify-content: center;
     text-align: center;
-  }
-  .hero-secondary { width: 100%; min-height: 54px; padding: 15px 20px; font-size: 15px; }
+  } */
+  /* .hero-secondary { width: 100%; min-height: 54px; padding: 15px 20px; font-size: 15px; }
   .scroll-indicator { bottom: 30px; }
-  .scroll-mouse { width: 20px; height: 32px; }
+  .scroll-mouse { width: 20px; height: 32px; } */
 
   /* --- Mission --- */
-  .slab { padding: 40px 0; }
+  /* .slab { padding: 40px 0; }
   .mission-text { font-size: 14.5px; line-height: 1.75; max-width: none; }
   .mission-panel { padding: 20px 16px; border-radius: 12px; }
-  .mission-divider { width: 80px; }
+  .mission-divider { width: 80px; } */
 
   /* --- Programme cards --- */
-  .programmes-section { padding-top: 20px; }
+  /* .programmes-section { padding-top: 20px; }
   .scroller { gap: 10px; padding: 16px 0 8px; }
   .prog-card {
     flex: 0 0 calc(50% - 5px);
     height: 200px;
   }
-  .prog-card .label { font-size: 13px; margin-bottom: 6px; }
+  .prog-card .label { font-size: 13px; margin-bottom: 6px; } */
 
 
   /* --- Impact --- */
-  .impact-section { padding: 60px 10px; }
+  /* .impact-section { padding: 60px 10px; }
   .impact-title { font-size: clamp(22px, 5.5vw, 34px); margin-bottom: 14px; }
   .stat .num, .num { font-size: 42px !important; }
   .stat .cap, .cap { font-size: 11px !important; padding: 6px 14px !important; }
   .stat .sub, .sub { font-size: 13px; max-width: 28ch; }
-  .stats { gap: 24px; }
+  .stats { gap: 24px; } */
 
   /* --- Values --- */
-  .values-section { padding: 50px 0; }
+  /* .values-section { padding: 50px 0; }
   .values-sub { font-size: 15px; }
   .values-icons { gap: 24px 20px; }
   .value-icon { max-width: 280px; }
   .value-icon-media { width: 180px; height: 130px; }
   .value-icon img { max-width: 160px; max-height: 120px; }
   .v-title { font-size: 16px; }
-  .v-sub { font-size: 12px; }
+  .v-sub { font-size: 12px; } */
 
   /* --- Events --- */
-  .events-section { padding: 44px 0; }
+  /* .events-section { padding: 44px 0; }
   .events-heading { font-size: clamp(32px, 8vw, 48px); }
   .events-text { font-size: 15px; line-height: 1.65; margin: 0 auto 16px; }
   .events-btn { width: 100%; text-align: center; padding: 14px; }
-  .events-card-sub { font-size: 13.5px; }
+  .events-card-sub { font-size: 13.5px; } */
 
   /* --- Brand carousel --- */
-  .worked-with {
+  /* .worked-with {
     padding: 0 0 18px;
     background: #ffffff;
   }
@@ -5711,63 +5711,63 @@ img{ max-width:100%; display:block; }
   .contact-copy { padding-top: 0; }
   .contact-submit {
     width: 100%;
-  }
+  } */
 
   /* --- Footer --- */
-  .footer { padding: 40px 0 24px; }
+  /* .footer { padding: 40px 0 24px; }
   .footer .container {
     width: min(1320px, calc(100% - 48px));
-  }
-  .footer-grid { gap: 24px; }
+  } */
+  /* .footer-grid { gap: 24px; }
   .footer-col { text-align: left; }
   .footer-col a { font-size: 14px; }
   .footer-heading { font-size: 12px; }
   .footer-logo { margin: 0; height: 23px; }
   .ihsaan-slogan { text-align: left; font-size: 12px; line-height: 1.25; }
-  .foot-silver { text-align: left; display: block; font-size: 11px; }
+  .foot-silver { text-align: left; display: block; font-size: 11px; } */
 
   /* --- Page heads (programme pages) --- */
-  .page-head { padding: 60px 0 40px; }
+  /* .page-head { padding: 60px 0 40px; }
   .page-head h1 { font-size: clamp(22px, 6vw, 34px); }
   .page-head .white-muted { font-size: 14px; }
-  .page-body { padding: 28px 0 50px; }
+  .page-body { padding: 28px 0 50px; } */
 
   /* --- Cards (programme pages) --- */
-  .card { padding: 22px 18px; border-radius: 14px; }
-  .card .darkp ul { padding-left: 16px; }
+  /* .card { padding: 22px 18px; border-radius: 14px; }
+  .card .darkp ul { padding-left: 16px; } */
 
   /* --- Mini stats --- */
-  .mini-stats { gap: 10px; }
+  /* .mini-stats { gap: 10px; }
   .mini-stat { min-width: 90px; padding: 12px 14px; border-radius: 10px; }
   .mini-num { font-size: 22px; }
-  .mini-label { font-size: 11.5px; }
+  .mini-label { font-size: 11.5px; } */
 
   /* --- Meet the Team --- */
-  .team-grid { gap: 16px; }
+  /* .team-grid { gap: 16px; }
   .team-card { padding: 22px 14px; }
   .team-photo { width: 70px; height: 70px; margin-bottom: 12px; }
   .team-name { font-size: 15px; }
-  .team-role { font-size: 13px; }
+  .team-role { font-size: 13px; } */
 
   /* --- Donate --- */
-  .donate-strip { padding: 24px 0; }
+  /* .donate-strip { padding: 24px 0; }
   .container-donate-inner { gap: 20px; flex-direction: column; text-align: center; }
   .donate-text { font-size: 18px; }
-  .donate-btn { width: 100%; text-align: center; padding: 14px 18px; }
+  .donate-btn { width: 100%; text-align: center; padding: 14px 18px; } */
 
   /* --- Haqqathon cards --- */
-  .haqqathon-events { padding-left: 20px; }
+  /* .haqqathon-events { padding-left: 20px; }
   .haqqathon-card { padding: 20px 16px; }
   .haqqathon-card ul li { font-size: 14px; }
-}
+} */
 
 /* ========================================================
    MOBILE OPTIMISATIONS — SMALL PHONE (≤400px)
    ======================================================== */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) { */
   /* :root { --container: min(1120px, 92%); } */
 
-  .hero { min-height: 100vh; min-height: 100svh; height: auto; padding-bottom: 92px; }
+  /* .hero { min-height: 100vh; min-height: 100svh; height: auto; padding-bottom: 92px; }
   .hero h1 { font-size: clamp(32px, 10vw, 42px); }
   .hero-logo { height: 24px; }
   .hero-cta { font-size: 15px; padding: 14px 16px; }
@@ -5776,11 +5776,11 @@ img{ max-width:100%; display:block; }
   .prog-card .label { font-size: 14px; }
 
   .stat .num, .num { font-size: 34px !important; }
-  .impact-title { font-size: 20px; }
+  .impact-title { font-size: 20px; } */
 
-  .events-heading { font-size: 28px; }
+  /* .events-heading { font-size: 28px; } */
 
-  .brand-tile { min-width: 130px; height: 60px; }
+  /* .brand-tile { min-width: 130px; height: 60px; }
   .brand-tile img { max-height: 30px; }
 
   .page-head { padding: 50px 0 30px; }
@@ -5789,9 +5789,9 @@ img{ max-width:100%; display:block; }
   .mini-num { font-size: 20px; }
 
   .team-grid { grid-template-columns: 1fr; }
-}
+} */
 
-.hero-vintage-overlay{
+/* .hero-vintage-overlay{
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -5814,9 +5814,9 @@ img{ max-width:100%; display:block; }
       rgba(255, 230, 170, 0.10),
       rgba(90, 70, 35, 0.14)
     );
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   #page-home .programmes-section .scroller,
   .programmes-section .scroller {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5859,10 +5859,10 @@ img{ max-width:100%; display:block; }
   .programmes-subtitle {
     margin-bottom: 24px;
   }
-}
+} */
 
 /* Fluid hero polish: keeps the first screen balanced across wide, short, and mobile viewports. */
-.hero {
+/* .hero {
   padding-top: clamp(82px, 11vh, 116px);
   padding-bottom: clamp(48px, 8vh, 78px);
 }
@@ -5889,13 +5889,13 @@ img{ max-width:100%; display:block; }
   min-height: clamp(38px, 4.8vh, 44px);
   padding: clamp(7px, 1vh, 10px) clamp(20px, 2vw, 26px);
   font-size: clamp(15px, min(1.12vw, 2.05vh), 17px);
-}
-.story-section {
+} */
+/* .story-section {
   padding-top: clamp(42px, 5vw, 52px);
   padding-bottom: clamp(48px, 5vw, 58px);
-}
+} */
 
-@media (max-height: 760px) and (min-width: 780px) {
+/* @media (max-height: 760px) and (min-width: 780px) {
   .hero {
     padding-top: 78px;
     padding-bottom: 34px;
@@ -5918,76 +5918,20 @@ img{ max-width:100%; display:block; }
     padding: 13px 22px;
     font-size: 15px;
   }
-}
+} */
 
-@media (max-width: 900px) {
-  .hero {
-    min-height: 100svh;
-    padding: 94px 20px 66px;
-  }
-  .hero-shell {
-    width: min(760px, calc(100% - 8px));
-  }
-  .hero h1 {
-    font-size: clamp(34px, min(7.2vw, 7.4vh), 56px);
-    max-width: 12ch;
-  }
+/* @media (max-width: 900px) {
   .story-section {
     padding-top: 42px;
   }
 }
 
 @media (max-width: 600px) {
-  .hero {
-    padding: 92px 16px 70px;
-  }
-  .hero-shell {
-    width: 100%;
-    padding-left: 10px;
-  }
-  .hero h1 {
-    font-size: clamp(32px, min(10vw, 6.8vh), 46px);
-    max-width: 11ch;
-    margin-bottom: 24px;
-  }
-  .hero-intro {
-    width: 100%;
-    max-width: 100%;
-    font-size: 13px;
-    line-height: 1.56;
-    margin-bottom: 30px;
-  }
-  .hero-actions {
-    gap: 22px;
-  }
-  .hero-cta,
-  .hero-secondary {
-    width: 100%;
-    min-height: 46px;
-    padding: 10px 18px;
-    border-radius: 999px;
-  }
-  .hero-secondary {
-    border: 1px solid rgba(255,255,255,0.96);
-  }
-  .hero-arrow {
-    width: 72px;
-    height: 46px;
-  }
-  .hero-arrow-part {
-    width: 44px;
-    height: 44px;
-    border-width: 1.25px;
-  }
-  .hero-arrow-small {
-    width: 28px;
-    height: 28px;
-  }
   .story-section {
     padding-top: 34px;
     padding-bottom: 58px;
   }
-}
+} */
 
 /* Shared section gutters: prevents wide home sections from hugging screen edges on in-between viewports. */
 /* :root {
@@ -5996,13 +5940,11 @@ img{ max-width:100%; display:block; }
   --container: min(1120px, calc(100% - (var(--site-gutter) * 2)));
   --container-wide: min(1320px, calc(100% - (var(--site-gutter-wide) * 2)));
 } */
-#page-home .container,
+/* #page-home .container,
 .story-inner {
   width: var(--container-wide);
-}
-.hero-shell {
-  width: min(1440px, calc(100% - (var(--site-gutter-wide) * 2)));
-}
+} */
+
 /* #page-home .story-inner {
   width: min(1440px, calc(100% - (var(--site-gutter-wide) * 2)));
 } */
@@ -6035,12 +5977,12 @@ img{ max-width:100%; display:block; }
   padding-right: max(calc(50vw - 50%), clamp(24px, 5vw, 72px));
 } */
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   #page-home [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;
-  }
+  } */
 
   /* :root {
     --site-gutter: clamp(18px, 5vw, 28px);
@@ -6069,7 +6011,7 @@ img{ max-width:100%; display:block; }
   /* #page-home .worked-with .center {
     padding: 34px 0 30px;
   } */
-  .solution-section{
+  /* .solution-section{
     padding: 52px 0 58px;
   }
   .solution-section .story-bridge{
@@ -6093,7 +6035,7 @@ img{ max-width:100%; display:block; }
     font-size: clamp(24px, 3vw, 38px);
     max-width: none;
   }
-}
+} */
 /* 
 @media (max-width: 900px) and (min-width: 701px) {
   #page-home .story-inner {
@@ -6147,7 +6089,7 @@ img{ max-width:100%; display:block; }
   } */
 /* } */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .story-research-card {
     padding: 22px 20px 24px;
   }
@@ -6176,9 +6118,9 @@ img{ max-width:100%; display:block; }
     letter-spacing: .015em;
     text-align: center;
     white-space: normal;
-  }
+  } */
 
-  .brand-carousel-reverse {
+  /* .brand-carousel-reverse {
     display: block;
     margin-top: 8px;
   }
@@ -6195,14 +6137,14 @@ img{ max-width:100%; display:block; }
   }
   .brand-tile img {
     max-height: 48px;
-  }
+  } */
 
-  .events-copy,
+  /* .events-copy,
   .events-heading,
   .events-text {
     text-align: left;
   }
   .events-text {
     margin: 0 0 16px;
-  }
-}
+  } */
+/* } */

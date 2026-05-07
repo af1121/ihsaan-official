@@ -93,3 +93,24 @@
 .brand-tile-accenture img{
   max-height: 68px;
 }
+
+@media (max-width: 600px) {
+    .brand-carousel-reverse {
+    display: block;
+    margin-top: 8px;
+  }
+  .brand-carousel {
+    padding: 10px 0;
+  }
+  .brand-track {
+    gap: 34px;
+    padding: 12px 18px;
+  }
+  .brand-tile {
+    min-width: 168px;
+    height: 78px;
+  }
+  .brand-tile img {
+    max-height: 48px;
+  }
+}
