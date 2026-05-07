@@ -473,7 +473,7 @@ img{ max-width:100%; display:block; }
 .mobile-sub a{ margin:0 0 8px; } */
 
 /* HERO */
-.hero{
+/* .hero{
   position:relative;
   min-height:100vh;
   min-height:100svh;
@@ -530,8 +530,8 @@ img{ max-width:100%; display:block; }
     linear-gradient(180deg, rgba(0,0,0,0.46) 0%, transparent 13%, transparent 84%, rgba(0,0,0,0.52) 100%),
     linear-gradient(135deg, rgba(28, 77, 124, 0.16) 0%, transparent 44%, rgba(5, 13, 28, 0.24) 100%);
   mix-blend-mode: normal;
-}
-.hero-tv-effect::before{
+} */
+/* .hero-tv-effect::before{
   content: "";
   position: absolute;
   inset: 0;
@@ -594,7 +594,7 @@ img{ max-width:100%; display:block; }
   top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height:42px; /* ✅ slightly smaller */
+  height:42px; 
   width:auto;
   margin:0;
   z-index: 3;
@@ -656,10 +656,10 @@ img{ max-width:100%; display:block; }
   border-radius: 0;
   background: transparent;
   border: none;
-}
+} */
 
 /* Hero text word-by-word reveal */
-.hero h1 .word {
+/* .hero h1 .word {
   display: inline-block;
   position: relative;
   opacity: 0;
@@ -667,8 +667,8 @@ img{ max-width:100%; display:block; }
   transition:
     opacity 0.5s var(--ease-out-expo),
     transform 0.5s var(--ease-out-expo);
-}
-.hero h1 .word.visible { opacity: 1; transform: translateY(0); }
+} */
+/* .hero h1 .word.visible { opacity: 1; transform: translateY(0); }
 .hero h1 .word::before,
 .hero h1 .word::after {
   content: none;
@@ -767,8 +767,8 @@ img{ max-width:100%; display:block; }
   opacity: 0;
   transform: scaleX(0.82);
   transition: opacity 0.28s ease, transform 0.28s ease;
-}
-.hero-cta::after {
+} */
+/* .hero-cta::after {
   content: "";
   position: absolute;
   top: -30%;
@@ -851,8 +851,8 @@ img{ max-width:100%; display:block; }
   opacity: 0;
   pointer-events: none;
   transition: left 0.52s ease, opacity 0.22s ease;
-}
-.hero-secondary:hover{
+} */
+/* .hero-secondary:hover{
   transform: translateY(-4px) scale(1.025);
   background: rgba(3,13,33,.18);
   border-color: rgba(255,255,255,.96);
@@ -866,7 +866,7 @@ img{ max-width:100%; display:block; }
 .hero-secondary:hover::after{
   left: 118%;
   opacity: 1;
-}
+} */
 /* Headings */
 /* .h2{
   margin:0 0 14px;
