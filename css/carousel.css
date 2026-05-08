@@ -1,0 +1,116 @@
+/* brand carousel */
+
+.brand-carousel{
+  position:relative;
+  overflow:hidden;
+  border-radius: 0;
+  padding: 10px 0;
+  background: transparent;
+  border: 0;
+  border-left: 0;
+  border-right: 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.brand-carousel-reverse{ margin-top: 0; border-top: 0; }
+.brand-track{
+  display:flex;
+  gap:44px;
+  align-items:center;
+  width:max-content;
+  flex: 0 0 auto;
+  padding: 18px 28px;
+  animation: brandScroll 50s linear infinite;
+}
+.brand-track-reverse{
+  animation: brandScrollReverse 50s linear infinite;
+}
+@media (hover: hover) and (pointer: fine) {
+  .brand-carousel:hover .brand-track{ animation-play-state: paused; }
+}
+@keyframes brandScroll{
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+@keyframes brandScrollReverse{
+  from { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(0, 0, 0); }
+}
+.brand-tile{
+  min-width: 190px;
+  height: 86px;
+  border-radius:0;
+  border:0;
+  background:transparent;
+  display:grid;
+  place-items:center;
+  padding:12px 10px;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .brand-track{
+    animation-duration: 32s;
+    animation-play-state: running;
+  }
+  .brand-track-reverse{
+    animation-duration: 32s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-track,
+  .brand-track-reverse{
+    animation-duration: 40s !important;
+    animation-iteration-count: infinite !important;
+    animation-play-state: running !important;
+  }
+}
+.brand-tile img{
+  max-height: 58px;
+  width:auto;
+  object-fit:contain;
+  filter: contrast(1.02);
+  opacity: .95;
+  transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+}
+.brand-tile:hover img{
+  filter: contrast(1.04);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.brand-tile:focus-visible{
+  outline: 2px solid rgba(16,43,104,.42);
+  outline-offset: 4px;
+}
+.brand-tile-wahed img{
+  max-height: 44px;
+}
+.brand-tile-mire img,
+.brand-tile-accenture img{
+  max-height: 68px;
+}
+
+@media (max-width: 600px) {
+    .brand-carousel-reverse {
+    display: block;
+    margin-top: 8px;
+  }
+  .brand-carousel {
+    padding: 10px 0;
+  }
+  .brand-track {
+    gap: 34px;
+    padding: 12px 18px;
+  }
+  .brand-tile {
+    min-width: 168px;
+    height: 78px;
+  }
+  .brand-tile img {
+    max-height: 48px;
+  }
+}
