@@ -27,14 +27,23 @@
   .prog-card { flex: 0 0 220px; height: 280px; }
 }
 
-@media (max-width: 600) {
+/* @media (max-width: 600) {
 .programmes-section { padding-top: 20px; }
   .scroller { gap: 10px; padding: 16px 0 8px; }
   .prog-card {
-    flex: 0 0 calc(50% - 5px);
-    height: 200px;
-  }
+  flex: 0 0 calc(50% - 5px);
+  height: 200px;
+}
   .prog-card .label { font-size: 13px; margin-bottom: 6px; }
+} */
+
+#page-home .programmes-section .scroller,
+.programmes-section .scroller {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2vw, 28px);
+  justify-content: initial;
+  padding: 22px 0 0;
 }
 
 @media (max-width: 900px) {
@@ -61,6 +70,9 @@
   .programmes-section .prog-card {
     flex: none;
     height: 320px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
   .programmes-section .prog-card .label {
     position: static;
@@ -82,3 +94,20 @@
   }
 }
 
+@media (max-width: 600px) {
+
+  #page-home .programmes-section .scroller,
+  .programmes-section .scroller {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  #page-home .programmes-section .prog-card,
+  .programmes-section .prog-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+}

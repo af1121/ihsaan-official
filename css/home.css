@@ -1895,13 +1895,14 @@
 }
 
 /* Programme cards */
-.scroller{
-  display:flex;
-  flex-wrap: wrap;
+/* .scroller{ */
+  /* display:flex; */
+  /* flex-wrap: wrap;
   justify-content: center;
   gap: clamp(14px, 1.2vw, 18px);
   padding:22px 0 10px;
-}
+} */
+
 .prog-card{
   display: flex;
   justify-content: center;
