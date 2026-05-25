@@ -51,6 +51,11 @@
       letter-spacing: .10em;
       text-transform: uppercase;
     }
+    @media (max-width: 768px) {
+     .page-head-kicker {
+      margin-top: 24px;
+  }
+}
     .page-head-kicker::before {
       content: "";
       width: 6px; height: 6px;
