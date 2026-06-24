@@ -1,6 +1,15 @@
+// ---------- INCLUDES LOADER ----------
+async function loadIncludes() {
+  const includeEls = document.querySelectorAll('[data-include]');
+  await Promise.all([...includeEls].map(async el => {
+    const res = await fetch(el.dataset.include);
+    el.outerHTML = await res.text();
+  }));
+}
+
 // ---------- SPA ROUTING ----------
-const pages = document.querySelectorAll(".page");
-const links = document.querySelectorAll("[data-route]");
+let pages = [];
+let links = [];
 const burger = document.getElementById("burger");
 const drawer = document.getElementById("drawer");
 
@@ -16,7 +25,6 @@ function showPage(route) {
 
   if (currentPage === nextPage) return;
 
-  // Fade out current page
   if (currentPage) {
     currentPage.style.opacity = "0";
     currentPage.style.transform = "translateY(-8px)";
@@ -40,10 +48,8 @@ function showPage(route) {
     if (burger) burger.setAttribute("aria-expanded", "false");
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Re-init reveal system for new page
     initRevealSystem();
 
-    // Re-init counters if going to home
     if (finalRoute === "home") {
       impactCounterStarted = false;
       initCounterObserver();
@@ -56,17 +62,7 @@ function handleRoute() {
   showPage(route);
 }
 
-links.forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const route = link.dataset.route;
-    if (!route) return;
-    window.location.hash = route;
-  });
-});
-
 window.addEventListener("hashchange", handleRoute);
-window.addEventListener("load", handleRoute);
 
 // ---------- MOBILE MENU ----------
 if (burger && drawer) {
@@ -345,7 +341,6 @@ function initHeroParticles() {
     animId = requestAnimationFrame(animate);
   }
 
-  // Only animate when hero is visible
   const hero = document.querySelector(".hero");
   if (!hero) return;
   const obs = new IntersectionObserver((entries) => {
@@ -366,7 +361,6 @@ function initNavScroll() {
     if (!ticking) {
       requestAnimationFrame(() => {
         topbar.classList.toggle("scrolled", window.scrollY > 50);
-        // Hide navbar when scrolling down into hero content area
         if (window.scrollY > 150) {
           topbar.style.opacity = "0";
           topbar.style.pointerEvents = "none";
@@ -494,60 +488,45 @@ function initCounterObserver(){
   obs.observe(impact);
 }
 
-// ---------- UNIVERSAL SITE LOADER ----------
-// function runSiteLoader() {
-//   const loader = document.getElementById("siteLoader");
-//   const percentEl = document.getElementById("siteLoaderPercent");
-//   const fillEl = document.querySelector(".site-loader-fill");
-//   if (!loader) return;
-
-//   const duration = 1000;
-//   const start = performance.now();
-
-//   function step(timestamp) {
-//     const elapsed = Math.min(timestamp - start, duration);
-//     const progress = elapsed / duration;
-//     const percent = Math.round(progress * 100);
-
-//     if (fillEl) fillEl.style.width = `${percent}%`;
-//     if (percentEl) percentEl.textContent = `${percent}%`;
-
-//     if (elapsed < duration) {
-//       requestAnimationFrame(step);
-//     } else {
-//       if (fillEl) fillEl.style.width = "100%";
-//       if (percentEl) percentEl.textContent = "100%";
-//       loader.classList.add("fade-out");
-//       setTimeout(() => { loader.style.display = "none"; }, 600);
-//     }
-//   }
-
-//   requestAnimationFrame(step);
-// }
-
-const srEls = document.querySelectorAll('[data-sr]');
-const timelineEls = document.querySelectorAll('.timeline-item');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-srEls.forEach(el => io.observe(el));
-timelineEls.forEach(el => io.observe(el));
-
-setTimeout(() => {
-  srEls.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight) el.classList.add('visible');
-  });
-}, 100);
-
 // Init
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
+  await loadIncludes();
+
+  pages = document.querySelectorAll(".page");
+  links = document.querySelectorAll("[data-route]");
+
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const route = link.dataset.route;
+      if (!route) return;
+      window.location.hash = route;
+    });
+  });
+
+  handleRoute();
+
+  const srEls = document.querySelectorAll('[data-sr]');
+  const timelineEls = document.querySelectorAll('.timeline-item');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  srEls.forEach(el => io.observe(el));
+  timelineEls.forEach(el => io.observe(el));
+
+  setTimeout(() => {
+    srEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) el.classList.add('visible');
+    });
+  }, 100);
+
   initHeroVideoPlayback();
   initNavScroll();
   initHeroParallax();
