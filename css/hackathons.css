@@ -887,6 +887,9 @@
 }
 
 #page-haqqathons .page-head h1 {
+  /* Keep the heading visible even when entrance animations do not run. */
+  opacity: 1;
+  animation: none;
   max-width: 13ch;
   font-size: clamp(36px, min(4.7vw, 7.9vh), 68px);
   font-weight: 700;
