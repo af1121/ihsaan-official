@@ -93,6 +93,7 @@
   /* --- Hero --- */
   .hero { min-height: 100vh; min-height: 100svh; height: auto; padding: 96px 16px 98px; align-items: center; }
   .hero-overlay {
+    opacity: 0.88;
     background:
       linear-gradient(90deg, rgba(3, 11, 27, 0.80) 0%, rgba(6, 26, 55, 0.56) 56%, rgba(0,0,0,0.28) 100%),
       linear-gradient(180deg, rgba(0,0,0,0.42) 0%, rgba(0,0,0,0.10) 38%, rgba(0,0,0,0.66) 100%);

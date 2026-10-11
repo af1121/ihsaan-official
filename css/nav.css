@@ -175,6 +175,16 @@
 }
 
 /* LinkedIn: white "L" on blue */
+.icon-btn.tiktok{
+  background: #000;
+}
+.icon-btn.tiktok img{
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
 .icon-btn.li{
   background:#0A66C2;
   border-color: rgba(255,255,255,.25);

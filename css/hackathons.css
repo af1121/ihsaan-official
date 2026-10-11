@@ -1529,6 +1529,11 @@
   border-radius: 0;
 }
 
+#page-haqqathons .events-section .event-year,
+#page-haqqathons .events-section .badge-pill.gold {
+  color: #fff;
+}
+
 #page-haqqathons .event-summary {
   max-width: 72ch;
   margin: 0;
