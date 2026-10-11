@@ -169,7 +169,8 @@
 
 #page-faithful-talent .faithful-hero h1 {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
   max-width: 12ch;
   margin: 0 0 22px;
   color: #ffffff;
@@ -588,7 +589,8 @@
 
 #page-career-conferences .career-conf-hero h1 {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
   max-width: 12ch;
   margin: 0 0 22px;
   color: #ffffff;
@@ -975,7 +977,7 @@
   }
 
   #page-career-conferences .career-conf-hero h1 {
-    font-size: clamp(38px, 12vw, 56px);
+    font-size: clamp(28px, 9vw, 56px);
   }
 
   #page-career-conferences .career-conf-hero p,
@@ -1181,7 +1183,8 @@
 
 #page-who-we-are .who-hero h1 {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
   max-width: 11ch;
   margin: 18px 0 20px;
   color: #ffffff;

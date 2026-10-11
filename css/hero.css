@@ -186,6 +186,11 @@
 }
 
 /* Hero text word-by-word reveal */
+#heroTitle .word,
+[data-hero-title] .word {
+  white-space: nowrap;
+}
+
 .hero h1 .word {
   display: inline-block;
   position: relative;
