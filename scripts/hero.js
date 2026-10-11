@@ -81,10 +81,7 @@ function initHeroTextReveal() {
     heroTitle.innerHTML = words.map(word => {
       if (word.match(/<br\s*\/?>/)) return word;
       if (word.match(/^\s+$/)) return word;
-      const letters = Array.from(word)
-        .map(letter => `<span class="letter">${letter}</span>`)
-        .join("");
-      return `<span class="word">${letters}</span>`;
+      return `<span class="word">${word}</span>`;
     }).join("");
 
     const wordEls = heroTitle.querySelectorAll(".word");
